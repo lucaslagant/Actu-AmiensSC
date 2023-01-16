@@ -1,0 +1,42 @@
+.modal {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+    display: none; /* cache le modal par défaut */
+  }
+  
+  .modal h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .modal p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .player-large {
+    margin-top: 20px;
+  }
+  
+  .player-large .col-sm-3 {
+    text-align: center;
+  }
+  
+  .player-large .col-sm-6 {
+    text-align: center;
+  }
+
+
+   .player-container {
+    position: relative;
+  }
+  
+  .player-data {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+  }
+  
+  
