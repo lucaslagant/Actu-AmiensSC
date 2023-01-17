@@ -241,7 +241,7 @@
 
     <!-- Footer -->
 
-    <?php include('Footer.html'); ?>
+    <?php include('Footer.php'); ?>
 
     <!-- </div> -->
 

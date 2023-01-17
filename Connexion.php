@@ -28,7 +28,7 @@
             <div>
                 <button class="block text-xl text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full" id="burger"><i class='bx bx-menu'></i></button>
             </div>
-            <div id="sidemenu" class="invisible"><?php include('Page_Navbar.html'); ?></div>
+            <div id="sidemenu" class="invisible"><?php include('Page_Navbar.php'); ?></div>
         </div>
     </nav>
 
@@ -66,7 +66,7 @@
 
 
     <!-- Footer -->
-    <?php include('Footer.html'); ?>
+    <?php include('Footer.php'); ?>
 
 
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
