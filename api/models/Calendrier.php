@@ -41,4 +41,32 @@ class Calendrier{
         // On retourne le résultat
         return $query;
     }
+
+    /**
+     * Mettre à jour un produit
+     *
+     * @return void
+     */
+    public function modifier(){
+        // On écrit la requête
+        $sql = "UPDATE " . $this->table . " score WHERE journee = :journee";
+        
+        // On prépare la requête
+        $query = $this->connexion->prepare($sql);
+        
+        // On sécurise les données
+        $this->score=htmlspecialchars(strip_tags($this->score));
+        $this->journee=htmlspecialchars(strip_tags($this->journee));
+        
+        // On attache les variables
+        $query->bindParam(':score', $this->score);
+        $query->bindParam(':journee', $this->journee);
+        
+        // On exécute
+        if($query->execute()){
+            return true;
+        }
+        
+        return false;
+    }
 }
