@@ -38,9 +38,9 @@
             <div class="flex flex-row bg-red-200 p-14 m-10 rounded-xl">
                 <div class="flex flex-col">
                     <div class="text-2xl font-semibold border-b-2 border-rose-800 h-14 mb-8 uppercase">Informations contact</div>
-                    <div class="text-xl mb-12"><i class='bx bx-phone' ></i><span class="ml-4"> +336 12 34 56 78</span></div>
-                    <div class="text-xl mb-12"><i class='bx bx-envelope' ></i><span class="ml-4"> email@gmail.fr</span></div>
-                    <div class="text-xl mb-12"><i class='bx bx-location-plus' ></i><span class="ml-4"> 384 rue AFPA</span></div>
+                    <div class="text-xl rounded-lg mb-12 p-4 hover:border-2 border-rose-400 hover:bg-rose-50 hover:text-rose-600"><i class='bx bx-phone' ></i><span class="ml-4"> +336 12 34 56 78</span></div>
+                    <div class="text-xl rounded-lg mb-12 p-4 hover:border-2 border-rose-400 hover:bg-rose-50 hover:text-rose-600"><i class='bx bx-envelope' ></i><span class="ml-4"> email@gmail.fr</span></div>
+                    <div class="text-xl rounded-lg mb-12 p-4 hover:border-2 border-rose-400 hover:bg-rose-50 hover:text-rose-600"><i class='bx bx-location-plus' ></i><span class="ml-4"> 384 rue AFPA</span></div>
                 </div>
 
                 <div class="ml-12 text-xl bg-red-50 p-8 rounded-xl">
