@@ -61,7 +61,7 @@ require_once(dirname(__FILE__). '/../utils/regex.php');
                 $fromNom = FROM_NAME;
                 $toNom = $nom;
 
-                $link = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].''
+
             }
         
         }
