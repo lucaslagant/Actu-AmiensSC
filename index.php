@@ -31,7 +31,6 @@ include dirname(__FILE__)."/views/templates/header.php";
 
         <br><br><br>
     </section>
-
     <!-- Section accès résultats/classement/calendrier -->
     <section class="bg-rose-100">
         <br><br><br><br>
