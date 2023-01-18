@@ -9,6 +9,8 @@ class User{
     public $prenom;
     public $email;
     public $mdp;
+    private $_validated_token;
+    private $_validated_at;
 
     /**
      * Constructeur avec $db pour la connexion à la base de données
@@ -46,7 +48,7 @@ class User{
     public function creer(){
 
         // Ecriture de la requête SQL en y insérant le nom de la table
-        $sql = "INSERT INTO " . $this->table . " SET nom=:nom, prenom=:prenom, email=:email, mdp=:mdp";
+        $sql = "INSERT INTO " . $this->table . " SET nom =:nom, prenom= :prenom, email=:email, mdp =:mdp";
 
         // Préparation de la requête
         $query = $this->connexion->prepare($sql);
@@ -68,5 +70,9 @@ class User{
             return true;
         }
         return false;
+    }
+
+    public function getValidatedToken(){
+        return $this->_validated_token;
     }
 }

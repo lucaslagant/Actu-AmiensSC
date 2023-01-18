@@ -12,23 +12,23 @@ include dirname(__FILE__)."/templates/header.php";
 
                     <div class="flex flex-col">
                     <label for="nom">Nom : </label>
-                    <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                    <input type="text" name="nom" id="nom" pattern="[A-Za-z-éèêëàâäôöûüç' ]+$" class="rounded border-rose-300 border-2" required>
                     <br><br>
 
-                    <label for="nom">Prénom : </label>
-                    <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                    <label for="prenom">Prénom : </label>
+                    <input type="text" name="prenom" id="prenom" pattern="[A-Za-z-éèêëàâäôöûüç' ]+$" class="rounded border-rose-300 border-2">
                     <br><br>
 
-                    <label for="nom">Email : </label>
-                    <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                    <label for="email">Email : </label>
+                    <input type="text" name="email" id="email" pattern="[[:alnum:]]([-_.]?[[:alnum:]])*@[[:alnum:]]([-.]?[[:alnum:]])*\.([a-z]{2,4})$" class="rounded border-rose-300 border-2">
                     <br><br>
 
-                    <label for="nom">Mot de passe : </label>
-                    <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                    <label for="mdp">Mot de passe : </label>
+                    <input type="text" name="mdp" id="mdp" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" class="rounded border-rose-300 border-2">
                     <br><br>
 
-                    <label for="nom">Réécrivez le mot de passe : </label>
-                    <input type="text" id="nom" class="rounded border-rose-300 border-2">
+                    <label for="confirmMdp">Réécrivez le mot de passe : </label>
+                    <input type="text" name="confirmMdp" id="confirmMdp" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" class="rounded border-rose-300 border-2">
                     <br><br>
                     </div>
 
