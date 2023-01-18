@@ -14,7 +14,7 @@
                 </li>
                 <li
                     class="bg-rose-300 mr-2 rounded-full border-2 border-rose-400 p-2 hover:border-rose-300 hover:bg-rose-300">
-                    <a href="#" class="p-1 bx-flashing-hover" target="_blank"><i class='bx bxl-facebook center'
+                    <a href="https://www.facebook.com/AmiensSC/" class="p-1 bx-flashing-hover" target="_blank"><i class='bx bxl-facebook center'
                             style='color:#9f1239'></i></a>
                 </li>
                 <li
@@ -40,7 +40,8 @@
         </div>
     </footer>
 
-
+    <!-- Script JS  -->
+    <script src="/asset/js/script.js"></script>
     <!-- JS boxicons  -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>

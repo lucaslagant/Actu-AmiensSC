@@ -18,23 +18,23 @@
     <!-- Barre de navigation -->
     <nav class="flex items-center justify-between flex-wrap bg-rose-200 p-10">
         <div class="flex items-center flex-shrink-0 text-rose-800 mr-6">
-            <a href="Index.php"><span class="font-bold text-xl tracking-tight">Logo</span></a>
+            <a href="index.php"><span class="font-bold text-xl tracking-tight">Logo</span></a>
         </div>
 
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Accueil</a>
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Équipe</a>
+                <a href="/../index.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Accueil</a>
+                <a href="/views/equipe.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Équipe</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Classement</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Résultat</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Calendrier</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500">Contact</a>
             </div>
             <div>
-                <a href="Connexion.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full mx-5">Se connecter</a>
+                <a href="/views/connexion.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full mx-5">Se connecter</a>
             </div>
             <div>
-                <a href="Connexion.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full">S'inscrire</a>
+                <a href="/views/inscription.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full">S'inscrire</a>
             </div>
         </div>
     </nav>
