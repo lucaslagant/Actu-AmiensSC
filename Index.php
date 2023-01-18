@@ -24,9 +24,9 @@
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Actualités</a>
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Équipe</a>
+                <a href="Equipe.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Équipe</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Évènements</a>
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500">Contact</a>
+                <a href="Contact.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500">Contact</a>
             </div>
             <div>
                 <a href="Connexion.php"
