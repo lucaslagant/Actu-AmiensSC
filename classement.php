@@ -8,6 +8,7 @@ $tab = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>clessement</title>
 </head>
 <body>
@@ -17,22 +18,22 @@ $tab = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
                 num
             </th>
             <th>
-                logo equipe
+                equipe
             </th>
             <th>
                 journee
             </th>
             <th>
-                gagne
+                match gagne
             </th>
             <th>
-                null
+                match null
             </th>
             <th>
-                perdu
+                match perdu
             </th>
             <th>
-                diff
+                différence de but
             </th>
             <th>
                 point
