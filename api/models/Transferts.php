@@ -53,7 +53,7 @@ class Transferts{
     public function creer(){
 
         // Ecriture de la requête SQL en y insérant le nom de la table
-        $sql = "INSERT INTO " . $this->table . " SET id=:id, valeur_joueur=:valeur_joueur, club_depart=:club_depart, club_arrivee=:club_arrivee,  montant=:montant, joueurs_id=:joueurs_id,  =:";
+        $sql = "INSERT INTO " . $this->table . " SET id=:id, valeur_joueur=:valeur_joueur, club_depart=:club_depart, club_arrivee=:club_arrivee,  montant=:montant, joueurs_id=:joueurs_id, date=:date";
 
         // Préparation de la requête
         $query = $this->connexion->prepare($sql);

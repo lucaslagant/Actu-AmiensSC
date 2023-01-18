@@ -133,9 +133,9 @@ CREATE TABLE joueurs (
 
 
 
-INSERT INTO joueurs (id, nom, prenom, numero_maillot, date_anniversaire,
- date_arrivee, nationalite, poste, age, taille, matchs_joues,
- temps_de_jeu, cartons_jaunes, cartons_rouges, buts_marques, passes_decisives,  joueurs_type)
+INSERT INTO joueurs (id, nom, prenom, numero_maillot, date_anniversaire, 
+date_arrivee, nationalite, poste, age, taille, matchs_joues, 
+temps_de_jeu, cartons_jaunes, cartons_rouges, buts_marques, passes_decisives,  joueurs_type)
 VALUES 
 
 -- Type 1 - Attaquant

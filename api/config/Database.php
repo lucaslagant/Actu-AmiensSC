@@ -3,8 +3,8 @@ class Database{
     // Connexion à la base de données
     private $host = "localhost";
     private $db_name = "amiens_sc";
-    private $username = "";
-    private $password = "";
+    private $username = "saval";
+    private $password = "1234";
     public $connexion;
 
     // getter pour la connexion
