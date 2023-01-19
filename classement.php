@@ -1,5 +1,5 @@
 <?php
-$tab = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
+    $tab = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
 ?>
 
 <!DOCTYPE html>
@@ -8,13 +8,12 @@ $tab = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>clessement</title>
 </head>
-<body>
-    <nav class="flex items-center justify-between flex-wrap bg-rose-200 p-10">
+<body style="background-color:#ffe4e6">
+    <nav class="flex overflow-auto items-center justify-between flex-wrap bg-rose-200 p-10">
         <div class="flex items-center flex-shrink-0 text-rose-800 mr-6">
             <a href="Index.php"><span class="font-bold text-xl tracking-tight">Logo</span></a>
         </div>
@@ -26,62 +25,70 @@ $tab = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
             <div id="sidemenu" class="invisible"><?php include('Page_Navbar.php'); ?></div>
         </div>
     </nav>
-    <table>
-        <tr>
-            <th>
-                num
-            </th>
-            <th>
-                equipe
-            </th>
-            <th>
-                journee
-            </th>
-            <th>
-                match gagne
-            </th>
-            <th>
-                match null
-            </th>
-            <th>
-                match perdu
-            </th>
-            <th>
-                différence de but
-            </th>
-            <th>
-                point
-            </th>
-        </tr>
+    <div class=" shadow-md sm:rounded-lg mx-7 overflow-hidden">
+        <table class="w-full text-sm text-left text-rose-500 dark:text-rose-400">
+            <thead class="text-xs text-rose-900 uppercase bg-rose-50 dark:bg-rose-700 dark:text-rose-400 overflow-hidden">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        num
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        equipe
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        journee
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        match gagne
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        match null
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        match perdu
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        différence de but
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        point
+                    </th>
+                </tr>
+            </thead>
 
-
-        <?php foreach ($tab as $clas):?> 
-            <tr>
-                <td>
-                    <?= $clas->num ?>
-                </td>
-                <td>
-                    <img src="<?= $clas->img ?>" alt="<?= $clas->equipe ?>">
-                    <?= $clas->equipe ?>
-                </td>
-                <td>
-                    <?= $clas->gagne ?>
-                </td>
-                <td>
-                    <?= $clas->null ?>
-                </td>
-                <td>
-                    <?= $clas->perdu ?>
-                </td>
-                <td>
-                    <?= $clas->diff ?>
-                </td>
-                <td>
-                    <?= $clas->point ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>       
-    </table>
+            <tbody>
+                <?php foreach ($tab as $clas):?> 
+                    <tr class="bg-white border-b dark:bg-rose-800 dark:border-rose-700">
+                        <th scope="row" class="px-6 py-4 font-medium text-rose-900 whitespace-nowrap dark:text-white">
+                            <?= $clas->num ?>
+                        </th>
+                        <td class="px-6 py-4">
+                            <img src="<?= $clas->img ?>" alt="<?= $clas->equipe ?>">
+                            <?= $clas->equipe ?>
+                        </td>
+                        <td class="px-6 py-4">
+                            <?= $clas->journee ?>
+                        </td>
+                        <td class="px-6 py-4">
+                            <?= $clas->gagne ?>
+                        </td>
+                        <td class="px-6 py-4">
+                            <?= $clas->null ?>
+                        </td>
+                        <td class="px-6 py-4">
+                            <?= $clas->perdu ?>
+                        </td>
+                        <td class="px-6 py-4">
+                            <?= $clas->diff ?>
+                        </td>
+                        <td class="px-6 py-4">
+                            <?= $clas->point ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?> 
+            </tbody>      
+        </table>
+    </div>        
     <?php include('Footer.php'); ?>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
