@@ -1,12 +1,8 @@
 <?php
-// Appelle de notre class User 
-require_once(dirname(__FILE__).'/../models/User.php');
 // Appelle de la BDD 
-require_once(dirname(__FILE__).'/../config/Database.php');
+$bdd = new PDO('mysql:host=localhost; dbname=amiens_sc', 'admin' , 'Parker.2280700');
 // Appelle d'un fichier init qui contient juste un session_start 
 require_once(dirname(__FILE__).'/../utils/init.php');
-// Appelle de la class Mail
-require_once(dirname(__FILE__).'/../class/Mail.php');
 // Appelle d'un fichier contenant toute les regex 
 require_once(dirname(__FILE__). '/../utils/regex.php');
 
@@ -46,35 +42,30 @@ require_once(dirname(__FILE__). '/../utils/regex.php');
         }else {
             $errors['mdp'] = 'Les mots de passe ne correspondent pas';
         }
-        // Si il n'y pas d'erreur 
+        // Si le tableau d'erreur est vide 
         if (empty($error)) {
-            $pdo = Database::getConnection();
-            $user = new User($nom , $prenom , $email, $mdp);
-            $response = $user->creer();
-            $id = $pdo->lastInsertId();
+            // Insert les info saisie dans le form en bdd 
+            $requete = $bdd->prepare('INSERT INTO user(nom, prenom, email, mdp) VALUES (?, ?, ?, ?);');
+            $requete->execute(array($nom, $prenom, $email, $mdp));
 
-            if ($response === true) {
-                
-                $to = $mail;
-                $from = SENDER_EMAIL;
-                $sujet = 'Validation de votre inscription';
-                $fromNom = FROM_NAME;
-                $toNom = $nom;
-
-
+            // recuperation de l'utilisateur en bdd 
+            $recupUser = $bdd->prepare('SELECT * FROM user WHERE nom = ? AND prenom = ? ;');
+            $recupUser->execute(array($pseudo, $mdp));
+            // Si un user existe déjà 
+            if ($recupUser->rowCount() > 0) {
+                $_SESSION['nom'] = $nom;
+                $_SESSION['prenom'] = $prenom;
+                $_SESSION['id'] = $recupUser->fetch()['id'];
             }
-        
+
+            $_SESSION['nom'] = $nom;
+            $_SESSION['prenom'] = $prenom;
+
         }
-        
-
-        
-
 
        
     }
-
-
-
-
-
+include dirname(__FILE__)."/../views/templates/header.php";
+include dirname(__FILE__)."/../views/inscription.php";
+include dirname(__FILE__)."/../views/templates/footer.php";
 ?>

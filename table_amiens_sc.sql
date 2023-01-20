@@ -99,9 +99,7 @@ create table `user`(
     nom varchar(25),
     prenom varchar(30),
     email varchar(60),
-    mdp varchar(60),
-    validate_token varchar(60),
-    validate_at datetime
+    mdp varchar(60)
 );
 
 

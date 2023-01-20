@@ -1,6 +1,4 @@
-<?php
-include dirname(__FILE__)."/templates/header.php";
-?>
+
     <section class="bg-rose-50">
 
         <div class="">
@@ -24,11 +22,11 @@ include dirname(__FILE__)."/templates/header.php";
                     <br><br>
 
                     <label for="mdp">Mot de passe : </label>
-                    <input type="text" name="mdp" id="mdp" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" class="rounded border-rose-300 border-2">
+                    <input type="password" name="mdp" id="mdp" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" class="rounded border-rose-300 border-2">
                     <br><br>
 
-                    <label for="confirmMdp">Réécrivez le mot de passe : </label>
-                    <input type="text" name="confirmMdp" id="confirmMdp" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" class="rounded border-rose-300 border-2">
+                    <label for="confirmMdp">Confirmez le mot de passe : </label>
+                    <input type="password" name="confirmMdp" id="confirmMdp" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" class="rounded border-rose-300 border-2">
                     <br><br>
                     </div>
 
@@ -42,6 +40,3 @@ include dirname(__FILE__)."/templates/header.php";
         </div>
 
     </section>
-<?php
-include dirname(__FILE__)."/templates/footer.php";
-?>
