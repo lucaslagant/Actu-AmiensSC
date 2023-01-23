@@ -49,17 +49,15 @@ require_once(dirname(__FILE__). '/../utils/regex.php');
             $requete->execute(array($nom, $prenom, $email, $mdp));
 
             // recuperation de l'utilisateur en bdd 
-            $recupUser = $bdd->prepare('SELECT * FROM user WHERE nom = ? AND prenom = ? ;');
-            $recupUser->execute(array($pseudo, $mdp));
+            $recupUser = $bdd->prepare('SELECT * FROM user WHERE nom = ? AND prenom = ? AND mdp = ?;');
+            $recupUser->execute(array($nom,$prenom,$mdp));
             // Si un user existe déjà 
             if ($recupUser->rowCount() > 0) {
                 $_SESSION['nom'] = $nom;
                 $_SESSION['prenom'] = $prenom;
                 $_SESSION['id'] = $recupUser->fetch()['id'];
             }
-
-            $_SESSION['nom'] = $nom;
-            $_SESSION['prenom'] = $prenom;
+            echo "BIENVENUE " .$_SESSION['prenom'];
 
         }
 

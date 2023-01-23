@@ -34,7 +34,7 @@
                 <a href="/views/connexion.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full mx-5">Se connecter</a>
             </div>
             <div>
-                <a href="/views/inscription.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full">S'inscrire</a>
+                <a href="/controllers/inscription-ctrl.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full">S'inscrire</a>
             </div>
         </div>
     </nav>

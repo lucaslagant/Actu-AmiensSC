@@ -96,6 +96,7 @@ insert into `classement`(num, equipe, img, journee, point, gagne, `null`, perdu,
 
 
 create table `user`(
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nom varchar(25),
     prenom varchar(30),
     email varchar(60),
@@ -234,7 +235,7 @@ CREATE TABLE transferts_2022_2023 (
   montant VARCHAR(255),
   joueurs_id INT,
   `date` VARCHAR(255),
-  FOREIGN key joueurs_id REFERENCES joueurs(id),
+  FOREIGN key (joueurs_id) REFERENCES joueurs(id)
 );
 
 INSERT INTO transferts_2022_2023 (id, valeur_joueur, club_depart, club_arrivee, montant, `date`, joueurs_id)
