@@ -33,31 +33,32 @@
         </div>
     </nav>
     <div class=" shadow-md sm:rounded-lg mx-7 overflow-hidden">
+        <br><h1 class="text-lg text-rose-800 font-bold text-4xl">Le Classement de la Ligue 2 BKT</h1><br>
         <table class="w-full text-sm text-left text-rose-500 dark:text-rose-400">
             <thead class="text-xs text-rose-900 uppercase bg-rose-50 dark:bg-rose-700 dark:text-rose-400 overflow-hidden">
                 <tr>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-6 py-3 text-lg">
                         num
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-6 py-3 text-lg">
                         equipe
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-6 py-3 text-lg">
                         journee
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-6 py-3 text-lg">
                         match gagne
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-6 py-3 text-lg">
                         match null
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-6 py-3 text-lg">
                         match perdu
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-6 py-3 text-lg">
                         différence de but
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-6 py-3 text-lg">
                         point
                     </th>
                 </tr>
@@ -66,7 +67,7 @@
             <tbody>
                 <?php foreach ($tab as $clas):?> 
                     <tr class="bg-white border-b dark:bg-rose-800 dark:border-rose-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-rose-900 whitespace-nowrap dark:text-white">
+                        <th scope="row" class="px-6 py-4 font-medium text-rose-900 whitespace-nowrap dark:text-white text-lg">
                             <?= $clas->num ?>
                         </th>
                         <td class="px-6 py-4">
@@ -74,27 +75,27 @@
                                 <div>
                                     <img src="equipe/<?= $clas->img ?>" alt="<?= $clas->equipe ?>">
                                 </div>
-                                <div class="py-9">
+                                <div class="py-9 text-lg">
                                     <?= $clas->equipe ?>
                                 </div>
                             </div>
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-6 py-4 text-lg">
                             <?= $clas->journee ?>
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-6 py-4 text-lg">
                             <?= $clas->gagne ?>
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-6 py-4 text-lg">
                             <?= $clas->null ?>
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-6 py-4 text-lg">
                             <?= $clas->perdu ?>
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-6 py-4 text-lg">
                             <?= $clas->diff ?>
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-6 py-4 text-lg">
                             <?= $clas->point ?>
                         </td>
                     </tr>
