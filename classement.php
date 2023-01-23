@@ -1,5 +1,12 @@
 <?php
-    $tab = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
+    // $tab = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
+
+    include "db.php";
+    $db = connexionBase();
+
+    $requete = $db->query("SELECT * FROM classement ORDER BY num ASC");
+    $tab = $requete->fetchAll(PDO::FETCH_OBJ);
+    $requete->closeCursor();
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>clessement</title>
+    <title>classement</title>
 </head>
 <body style="background-color:#ffe4e6">
     <nav class="flex overflow-auto items-center justify-between flex-wrap bg-rose-200 p-10">
@@ -63,8 +70,14 @@
                             <?= $clas->num ?>
                         </th>
                         <td class="px-6 py-4">
-                            <img src="<?= $clas->img ?>" alt="<?= $clas->equipe ?>">
-                            <?= $clas->equipe ?>
+                            <div class="flex">
+                                <div>
+                                    <img src="equipe/<?= $clas->img ?>" alt="<?= $clas->equipe ?>">
+                                </div>
+                                <div class="py-9">
+                                    <?= $clas->equipe ?>
+                                </div>
+                            </div>
                         </td>
                         <td class="px-6 py-4">
                             <?= $clas->journee ?>
