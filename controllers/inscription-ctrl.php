@@ -29,7 +29,7 @@ require_once(dirname(__FILE__). '/../utils/regex.php');
                 $errors['prenom'] = 'Format du prénom invalide';
             }
         }
-        $email = trim(filter_input(INPUT_POST , 'email'));
+        $email = trim(filter_input(INPUT_POST , 'email', FILTER_SANITIZE_EMAIL));
         if ($email) {
             if (!preg_match(REGEX_NO_NUMBER , $email)) {
                 $errors['email'] = 'Format de l\'adresse mail invalide';
@@ -57,12 +57,13 @@ require_once(dirname(__FILE__). '/../utils/regex.php');
                 $_SESSION['prenom'] = $prenom;
                 $_SESSION['id'] = $recupUser->fetch()['id'];
             }
-            echo "BIENVENUE " .$_SESSION['prenom'];
-
+            header('Location: index.php');
         }
 
        
     }
+
+// Appelle des fichiers pour créé la page 
 include dirname(__FILE__)."/../views/templates/header.php";
 include dirname(__FILE__)."/../views/inscription.php";
 include dirname(__FILE__)."/../views/templates/footer.php";

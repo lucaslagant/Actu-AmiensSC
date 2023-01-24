@@ -18,7 +18,7 @@
                     <br><br>
 
                     <label for="email">Email : </label>
-                    <input type="text" name="email" id="email" pattern="[[:alnum:]]([-_.]?[[:alnum:]])*@[[:alnum:]]([-.]?[[:alnum:]])*\.([a-z]{2,4})$" class="rounded border-rose-300 border-2">
+                    <input type="email" name="email" id="email" pattern="[[:alnum:]]([-_.]?[[:alnum:]])*@[[:alnum:]]([-.]?[[:alnum:]])*\.([a-z]{2,4})$" class="rounded border-rose-300 border-2">
                     <br><br>
 
                     <label for="mdp">Mot de passe : </label>
@@ -32,7 +32,7 @@
 
                     <div class="flex justify-center">
                     <input type="submit" value="Créer" class="px-12 block text-rose-50 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-600 px-5 py-2 rounded-full">
-                    <a href="/views/connexion.php" class="ml-6 block text-rose-800 inline-block mt-0 hover:text-rose-800 bg-rose-300 hover:bg-white px-5 py-2 rounded-full">Se connecter</a>
+                    <a href="/controllers/connexion-ctrl.php" class="ml-6 block text-rose-800 inline-block mt-0 hover:text-rose-800 bg-rose-300 hover:bg-white px-5 py-2 rounded-full">Se connecter</a>
                     </div>
                 </form>
                 </div>

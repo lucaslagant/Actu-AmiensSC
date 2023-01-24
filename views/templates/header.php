@@ -31,7 +31,7 @@
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500">Contact</a>
             </div>
             <div>
-                <a href="/views/connexion.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full mx-5">Se connecter</a>
+                <a href="/controllers/connexion-ctrl.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full mx-5">Se connecter</a>
             </div>
             <div>
                 <a href="/controllers/inscription-ctrl.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full">S'inscrire</a>

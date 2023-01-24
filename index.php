@@ -1,5 +1,9 @@
 <?php
 include dirname(__FILE__)."/views/templates/header.php";
+// Appelle d'un fichier init qui contient juste un session_start 
+require_once(dirname(__FILE__).'/../utils/init.php');
+// Déclaration pour savoir si connecter ou non 
+echo "BIENVENUE " .$_SESSION['prenom'];
 ?>
 <!-- Section présentation/slogan -->
     <section style="background-image: url('img/headers/aura.jpg')" class="pt-10 bg-cover">
