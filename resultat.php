@@ -42,17 +42,17 @@
             <div id="sidemenu" class="invisible"><?php include('Page_Navbar.php'); ?></div>
         </div>
     </nav>
-    <br><h1 class="text-lg text-rose-800 font-bold text-4xl mx-9 max-md:text-lg">Les Résultat d'Amiens SC en Ligue 2</h1><br>
-    <div class="p-6 m-4">
+    <br><h1 class="text-lg text-rose-800 font-bold text-4xl mx-7 max-md:text-lg">Les Résultat d'Amiens SC en Ligue 2</h1><br>
+    <div class="p-4 m-4 max-md:p-0 max-md:m-0">
         <?php foreach ($tab as $cal):?> 
-            <div class="flex text-rose-900 px-4 w-full">
-                <div class="text-2xl w-1/3 flex justify-center max-md:text-base">
+            <div class="flex text-rose-900 px-4 w-full max-md:justify-">
+                <div class="text-2xl w-1/3 flex justify-center max-md:text-sm max-md:w-1/4">
                     <?= $cal->stade ?>,&nbsp; <?= $cal->lieu ?>
                 </div>
-                <div class="text-2xl w-1/3 flex justify-center max-md:text-base">
+                <div class="text-2xl w-1/3 flex justify-center max-md:text-sm max-md:justify-center max-md:w-2/4">
                     <?= $cal->date ?>
                 </div>
-                <div class="text-2xl w-1/3 flex justify-center max-md:text-base">
+                <div class="text-2xl w-1/3 flex justify-center max-md:text-sm max-md:justify-end max-md:w-1/4">
                     <?= $cal->localisation ?>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                     <?php endif; ?>
                 </div>
             <br>
-            <br>
+            <br class="max-md:hidden">
         <?php endforeach; ?> 
     </div>       
     <?php include('Footer.php'); ?>
