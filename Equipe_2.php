@@ -8,8 +8,8 @@
     <title>Equipe</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href='style.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href='slide.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body style="background-color:#ffe4e6;">
@@ -35,12 +35,13 @@
 
     <!-- Attaquants -->
     <section class="text-rose-800 border-b-2 border-rose-300">
+        
         <div class="text-3xl font-bold flex justify-center mt-10">Attaquants</div>
         <!-- Flex wrap pour que les divs aillent à la ligne -->
         <div class="flex flex-row flex-wrap justify-center m-8">
             <div class="mr-24">
                 <button onclick="toggleModal('modal-id')">
-                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -64,7 +65,7 @@
             </div>
             <div class="mr-24">          
                 <button onclick="toggleModal('modal-id')">
-                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -80,7 +81,7 @@
         <div class="flex flex-row flex-wrap justify-center m-8">
             <div class="mr-24">
                 <button onclick="toggleModal('modal-id')">
-                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -104,7 +105,7 @@
             </div>
             <div class="mr-24">          
                 <button onclick="toggleModal('modal-id')">
-                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -120,7 +121,7 @@
         <div class="flex flex-row flex-wrap justify-center m-8">
             <div class="mr-24">
                 <button onclick="toggleModal('modal-id')">
-                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -144,7 +145,7 @@
             </div>
             <div class="mr-24">          
                 <button onclick="toggleModal('modal-id')">
-                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -230,12 +231,12 @@
 
     <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
 
-    <!-- Swiper -->
+    <!-- Swiper -->  
     <div class="swiper mySwiper">
         <div class="swiper-wrapper text-rose-800">
             <div class="swiper-slide">
                 <button onclick="toggleModal('modal-id')">
-                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -314,15 +315,15 @@
 
 
 
-
     <!-- Footer -->
     <?php include('Footer.php'); ?>
 
 <script src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"
-Intergrity="sha512-s/ili339Sh6gM9omfUC6fRwZPU6MPcGJxvDqlbBzPcFcD649iqeO96YQr3VKj/jZSMd2/T9Qr2mp2w4DyCIOPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js" integrity="sha512-s/ili339Sh6gM9omfUC6fRwZPU6MPcGJxvDqlbBzPcFcD649iqeO96YQr3VKj/jZSMd2/T9Qr2mp2w4DyCIOPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
 </body>
 
 </html>
