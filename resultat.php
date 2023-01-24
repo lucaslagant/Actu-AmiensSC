@@ -57,7 +57,7 @@
                 </div>
             </div>
             
-                <div class="flex bg-rose-700 w-full text-sm text-left text-rose-400 rounded-full m-3">
+                <div class="flex bg-rose-700 w-full text-sm text-left text-rose-300 rounded-full m-3">
                     <?php if($cal->localisation == "Exterieur"): ?>
                         
                         <div class="px-9 py-4 w-1/3">

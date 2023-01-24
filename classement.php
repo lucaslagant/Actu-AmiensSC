@@ -8,7 +8,7 @@
 	// $result = json_decode($response);
     // var_dump($result);
     
-    // $tab1 = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
+    // $tab1 = json_decode(file_get_contents("http://127.0.0.1:8080/api/asc/lireclas.php"));
     // var_dump($tab1);
 
     include "db.php";
@@ -44,8 +44,8 @@
     </nav>
     <br><h1 class="text-lg text-rose-800 font-bold text-4xl mx-7 max-md:text-lg">Le Classement de la Ligue 2 BKT</h1><br>
     <div class=" shadow-md rounded-xl  overflow-hidden mx-7">
-        <table class="table-auto w-full text-sm text-left text-rose-400">
-            <thead class="text-xs  uppercase bg-rose-800 text-rose-400 overflow-hidden">
+        <table class="table-auto w-full text-sm text-left text-rose-300">
+            <thead class="text-xs  uppercase bg-rose-800 text-rose-300 overflow-hidden">
                 <tr>
                     <th scope="col" class="px-6 py-3 text-lg max-md:text-base">
                         num
