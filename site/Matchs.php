@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+œ<!DOCTYPE html>
 <html lang="fr h-full">
 
 <head>
