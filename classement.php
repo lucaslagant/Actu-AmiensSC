@@ -1,5 +1,15 @@
 <?php
-    // $tab = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
+    // $url = "http://127.0.0.1:8080/api/asc/lireclas.php";
+	
+	// $client = curl_init($url);
+	// curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
+	// $response = curl_exec($client);
+	
+	// $result = json_decode($response);
+    // var_dump($result);
+    
+    // $tab1 = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lireclas.php"));
+    // var_dump($tab1);
 
     include "db.php";
     $db = connexionBase();
@@ -17,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>classement</title>
+    <title>Classement</title>
 </head>
 <body style="background-color:#ffe4e6">
     <nav class="flex overflow-auto items-center justify-between flex-wrap bg-rose-200 p-10">
@@ -32,33 +42,33 @@
             <div id="sidemenu" class="invisible"><?php include('Page_Navbar.php'); ?></div>
         </div>
     </nav>
-    <div class=" shadow-md sm:rounded-lg mx-7 overflow-hidden">
-        <br><h1 class="text-lg text-rose-800 font-bold text-4xl">Le Classement de la Ligue 2 BKT</h1><br>
-        <table class="w-full text-sm text-left text-rose-500 dark:text-rose-400">
-            <thead class="text-xs text-rose-900 uppercase bg-rose-50 dark:bg-rose-700 dark:text-rose-400 overflow-hidden">
+    <br><h1 class="text-lg text-rose-800 font-bold text-4xl mx-7 max-md:text-lg">Le Classement de la Ligue 2 BKT</h1><br>
+    <div class=" shadow-md rounded-xl  overflow-hidden mx-7">
+        <table class="table-auto w-full text-sm text-left text-rose-400">
+            <thead class="text-xs  uppercase bg-rose-800 text-rose-400 overflow-hidden">
                 <tr>
-                    <th scope="col" class="px-6 py-3 text-lg">
+                    <th scope="col" class="px-6 py-3 text-lg max-md:text-base">
                         num
                     </th>
-                    <th scope="col" class="px-6 py-3 text-lg">
+                    <th scope="col" class="px-6 py-3 text-lg max-md:text-base">
                         equipe
                     </th>
-                    <th scope="col" class="px-6 py-3 text-lg">
+                    <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
                         journee
                     </th>
-                    <th scope="col" class="px-6 py-3 text-lg">
+                    <th scope="col" class="px-6 py-3 text-lg max-lg:hidden max-md:text-base">
                         match gagne
                     </th>
-                    <th scope="col" class="px-6 py-3 text-lg">
+                    <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
                         match null
                     </th>
-                    <th scope="col" class="px-6 py-3 text-lg">
+                    <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
                         match perdu
                     </th>
-                    <th scope="col" class="px-6 py-3 text-lg">
+                    <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
                         différence de but
                     </th>
-                    <th scope="col" class="px-6 py-3 text-lg">
+                    <th scope="col" class="px-6 py-3 text-lg  max-md:text-base">
                         point
                     </th>
                 </tr>
@@ -66,43 +76,44 @@
 
             <tbody>
                 <?php foreach ($tab as $clas):?> 
-                    <tr class="bg-white border-b dark:bg-rose-800 dark:border-rose-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-rose-900 whitespace-nowrap dark:text-white text-lg">
+                    <tr class=" border-b bg-rose-700 border-rose-700 ">
+                        <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-white text-lg max-md:text-base">
                             <?= $clas->num ?>
                         </th>
                         <td class="px-6 py-4">
-                            <div class="flex">
+                            <div class="md:flex">
                                 <div>
                                     <img src="equipe/<?= $clas->img ?>" alt="<?= $clas->equipe ?>">
                                 </div>
-                                <div class="py-9 text-lg">
+                                <div class="md:py-11 text-lg max-md:text-base">
                                     <?= $clas->equipe ?>
                                 </div>
                             </div>
                         </td>
-                        <td class="px-6 py-4 text-lg">
+                        <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
                             <?= $clas->journee ?>
                         </td>
-                        <td class="px-6 py-4 text-lg">
+                        <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
                             <?= $clas->gagne ?>
                         </td>
-                        <td class="px-6 py-4 text-lg">
+                        <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
                             <?= $clas->null ?>
                         </td>
-                        <td class="px-6 py-4 text-lg">
+                        <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
                             <?= $clas->perdu ?>
                         </td>
-                        <td class="px-6 py-4 text-lg">
+                        <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
                             <?= $clas->diff ?>
                         </td>
-                        <td class="px-6 py-4 text-lg">
+                        <td class="px-6 py-4 text-lg max-md:text-base">
                             <?= $clas->point ?>
                         </td>
                     </tr>
                 <?php endforeach; ?> 
             </tbody>      
         </table>
-    </div>        
+    </div> 
+    <br>       
     <?php include('Footer.php'); ?>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
