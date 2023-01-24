@@ -3,7 +3,6 @@ create database amiens_sc;
 
 use amiens_sc;
 
---ensemble du calendrier 2022/2023 de l'equipe et les resultat des match--
 
 create table `calendrier`(
     journee int primary key,
@@ -17,48 +16,47 @@ create table `calendrier`(
 );
 
 insert into `calendrier` (journee, stade, lieu, `date`, equipe, img, score, localisation) values
-    (1, 'Stade Saint-Symphorien', 'Metz', '30 juillet 2022', 'FC Metz', 'Metz-min.png', '3-0', 'Exterieur'),
-    (2, 'Stade de la Licorne', 'Amiens', '06 août 2022', 'FC Annecy', 'Annecy-min.png', '1-0', 'Domicile'),
-    (3, 'Stade Auguste-Bonal', 'Sochaux', '13 août 2022', 'FC Sochaux', 'Sochaux-min.png', '0-1', 'Exterieur'),
-    (4, 'Stade de la Licorne', 'Amiens', '20 août 2022', 'SC Bastia', 'Bastia-min.png', '3-1', 'Domicile'),
-    (5, 'Stade Océane', 'Le Havre', '27 août 2022', 'Havre AC', 'Le_Havre-min.png', '1-1', 'Exterieur'),
-    (6, 'Stade de la Licorne', 'Amiens', '30 août 2022', 'Paris FC', 'Paris-min.png', '1-1', 'Domicile'),
-    (7, 'Stade de la Licorne', 'Amiens', '02 septembre 2022', 'Grenoble Foot 38', 'Grenoble-min.png', '1-0', 'Domicile'),
-    (8, 'Stade Michel-d Ornano', 'Caen', '10 septembre 2022', 'SM Caen', 'Caen-min.png', '3-1', 'Exterieur'),
-    (9, 'Stade de la Licorne', 'Amiens', '17 septembre 2022', 'Niort', 'Niort-min.png', '3-0', 'Domicile'),
-    (10, 'Stade Paul-Lignon', 'Rodez', '01 octobre 2022', 'Rodez AF', 'Rodez-min.png', '0-1', 'Exterieur'),
-    (11, 'Stade de la Licorne', 'Amiens', '08 octobre 2022', 'Dijon FCO', 'Dijon-min.png', '2-1', 'Domicile'),
-    (12, 'Stade des Costières', 'Nîmes', '15 octobre 2022', 'Nîmes', 'Nimes-min.png', '2-0', 'Exterieur'),
-    (13, 'Stade de la Licorne', 'Amiens', '22 octobre 2022', 'AS Saint-Etienne', 'Saint_Etienne-min.png', '0-1', 'Domicile'),
-    (14, 'Nouste Camp', 'Pau', '05 novembre 2022', 'Pau FC', 'Pau-min.png', '2-1', 'Exterieur'),
-    (15, 'Stade de la Licorne', 'Amiens', '12 novembre 2022', 'Quevilly-Rouen', 'QRM-min.png','0-2', 'Domicile'),
-    (16, 'Stade du Hainaut', 'Valenciennes', '26 décembre 2022', 'Valenciennes FC', 'Valenciennes-min.png', '1-1', 'Exterieur'),
-    (17, 'Stade Francis Le Basser', 'Laval', ' 30 décembre 2022', 'Laval', 'Laval-min.png', '0-3', 'Exterieur'),
-    (18, 'Stade de la Licorne', 'Amiens', '10 janvier 2023', 'EA Guingamp', 'Guingamp-min.png', '1-1', 'Domicile'),
-    (19, 'Matmut Atlantique', 'Bordeaux', '13 janvier 2023', 'Girondins de Bordeaux', 'Bordeaux-min.png', '1-1','Exterieur'),
-    (20, 'Stade de la Licorne', 'Amiens', '28 janvier 2023', 'Havre AC', 'Le_Havre-min.png', '', 'Domicile'),
-    (21, 'Stade René Gaillard', 'Niort', '31 Janvier 2023', 'Niort', 'Niort-min.png', '','Exterieur'),
-    (22, 'Stade de la licorne', 'Amiens', '03 février 2023', 'FC Metz', 'Metz-min.png', '', 'Domicile'),
-    (23, 'Stade Sébastien Charléty', 'Paris', '11 février 2023', 'Paris FC', 'Paris-min.png', '','Exterieur'),
-    (24, 'Parc des Sports', 'Annecy', '18 février 2023', 'FC Annecy', 'Annecy-min.png', '','Exterieur'),
-    (25, 'Stade de la licorne', 'Amiens', '25 Février 2023', 'Girondins de Bordeaux', 'Bordeaux-min.png', '', 'Domicile'),
-    (26, 'Stade de la licorne', 'Amiens', '04 mars 2023', 'Pau FC', 'Pau-min.png', '', 'Domicile'),
-    (27, 'Stade Geoffroy-Guichard', 'Saint-Etienne', '11 mars 2023', 'AS Saint-Etienne', 'Saint_Etienne-min.png', '','Exterieur'),
-    (28, 'Stade de la licorne', 'Amiens', '18 mars 2023', 'Rodez AF', 'Rodez-min.png', '', 'Domicile'),
-    (29, 'Stade des Alpes', 'Grenoble', '01 avril 2023', 'Grenoble Foot 38', 'Grenoble-min.png', '','Exterieur'),
-    (30, 'Stade de la licorne', 'Amiens', '08 avril 2023', 'Nîmes', 'Nimes-min.png', '', 'Domicile'),
-    (31, 'Stade de Roudourou', 'Guingamp', '15 avril 2023', 'EA Guinganp', 'Guingamp-min.png', '','Exterieur'),
-    (32, 'Stade de la licorne', 'Amiens', '22 avril 2023', 'Valenciennes FC', 'Valenciennes-min.png', '', 'Domicile'),
-    (33, 'Stade Armand-Cesari', 'Bastia', '29 avril 2023', 'FC Bastia', 'Bastia-min.png', '','Exterieur'),
-    (34, 'Stade de la licorne', 'Amiens', '06 mai 2023', 'FC Sochaux', 'Sochaux-min.png', '', 'Domicile'),
-    (35, 'Stade Gaston Gérard', 'Dijon', '13 mai 2023', 'Dijon FCO', 'Dijon-min.png', '','Exterieur'),
-    (36, 'Stade de la licorne', 'Amiens', '20 mai 2023', 'SM Cean', 'Caen-min.png', '', 'Domicile'),
-    (37, 'Stade Robert-Diochon', 'Rouen', '26 mai 2023', 'Quevilly-Rouen', 'QRM-min.png', '','Exterieur'),
-    (38, 'Stade de la licorne', 'Amiens', '02 juin 2023', 'Laval', 'Laval-min.png', '', 'Domicile');
+    (1, 'Stade Saint-Symphorien', 'Metz', '30 juillet 2022', 'FC Metz', 'Metz-min.png', '3-0', 'exterieur'),
+    (2, 'Stade de la Licorne', 'Amiens', '06 août 2022', 'FC Annecy', 'Annecy-min.png', '1-0', 'domicile'),
+    (3, 'Stade Auguste-Bonal', 'Sochaux', '13 août 2022', 'FC Sochaux', 'Sochaux-min.png', '0-1', 'exterieur'),
+    (4, 'Stade de la Licorne', 'Amiens', '20 août 2022', 'SC Bastia', 'Bastia-min.png', '3-1', 'domicile'),
+    (5, 'Stade Océane', 'Le Havre', '27 août 2022', 'Havre AC', 'Le_Havre-min.png', '1-1', 'exterieur'),
+    (6, 'Stade de la Licorne', 'Amiens', '30 août 2022', 'Paris FC', 'Paris-min.png', '1-1', 'domicile'),
+    (7, 'Stade de la Licorne', 'Amiens', '02 septembre 2022', 'Grenoble Foot 38', 'Grenoble-min.png', '1-0', 'domicile'),
+    (8, 'Stade Michel-d Ornano', 'Caen', '10 septembre 2022', 'SM Caen', 'Caen-min.png', '3-1', 'exterieur'),
+    (9, 'Stade de la Licorne', 'Amiens', '17 septembre 2022', 'Niort', 'Niort-min.png', '3-0', 'domicile'),
+    (10, 'Stade Paul-Lignon', 'Rodez', '01 octobre 2022', 'Rodez AF', 'Rodez-min.png', '0-1', 'exterieur'),
+    (11, 'Stade de la Licorne', 'Amiens', '08 octobre 2022', 'Dijon FCO', 'Dijon-min.png', '2-1', 'domicile'),
+    (12, 'Stade des Costières', 'Nîmes', '15 octobre 2022', 'Nîmes', 'Nimes-min.png', '2-0', 'exterieur'),
+    (13, 'Stade de la Licorne', 'Amiens', '22 octobre 2022', 'AS Saint-Etienne', 'Saint_Etienne-min.png', '0-1', 'domicile'),
+    (14, 'Nouste Camp', 'Pau', '05 novembre 2022', 'Pau FC', 'Pau-min.png', '2-1', 'exterieur'),
+    (15, 'Stade de la Licorne', 'Amiens', '12 novembre 2022', 'Quevilly-Rouen', 'QRM-min.png','0-2', 'domicile'),
+    (16, 'Stade du Hainaut', 'Valenciennes', '26 décembre 2022', 'Valenciennes FC', 'Valenciennes-min.png', '1-1', 'exterieur'),
+    (17, 'Stade Francis Le Basser', 'Laval', ' 30 décembre 2022', 'Laval', 'Laval-min.png', '0-3', 'exterieur'),
+    (18, 'Stade de la Licorne', 'Amiens', '10 janvier 2023', 'EA Guingamp', 'Guingamp-min.png', '1-1', 'domicile'),
+    (19, 'Matmut Atlantique', 'Bordeaux', '13 janvier 2023', 'Girondins de Bordeaux', 'Bordeaux-min.png', '1-1','exterieur'),
+    (20, 'Stade de la Licorne', 'Amiens', '28 janvier 2023', 'Havre AC', 'Le_Havre-min.png', '', 'domicile'),
+    (21, 'Stade René Gaillard', 'Niort', '31 Janvier 2023', 'Niort', 'Niort-min.png', '','exterieur'),
+    (22, 'Stade de la licorne', 'Amiens', '03 février 2023', 'FC Metz', 'Metz-min.png', '', 'domicile'),
+    (23, 'Stade Sébastien Charléty', 'Paris', '11 février 2023', 'Paris FC', 'Paris-min.png', '','exterieur'),
+    (24, 'Parc des Sports', 'Annecy', '18 février 2023', 'FC Annecy', 'Annecy-min.png', '','exterieur'),
+    (25, 'Stade de la licorne', 'Amiens', '25 Février 2023', 'Girondins de Bordeaux', 'Bordeaux-min.png', '', 'domicile'),
+    (26, 'Stade de la licorne', 'Amiens', '04 mars 2023', 'Pau FC', 'Pau-min.png', '', 'domicile'),
+    (27, 'Stade Geoffroy-Guichard', 'Saint-Etienne', '11 mars 2023', 'AS Saint-Etienne', 'Saint_Etienne-min.png', '','exterieur'),
+    (28, 'Stade de la licorne', 'Amiens', '18 mars 2023', 'Rodez AF', 'Rodez-min.png', '', 'domicile'),
+    (29, 'Stade des Alpes', 'Grenoble', '01 avril 2023', 'Grenoble Foot 38', 'Grenoble-min.png', '','exterieur'),
+    (30, 'Stade de la licorne', 'Amiens', '08 avril 2023', 'Nîmes', 'Nimes-min.png', '', 'domicile'),
+    (31, 'Stade de Roudourou', 'Guingamp', '15 avril 2023', 'EA Guinganp', 'Guingamp-min.png', '','exterieur'),
+    (32, 'Stade de la licorne', 'Amiens', '22 avril 2023', 'Valenciennes FC', 'Valenciennes-min.png', '', 'domicile'),
+    (33, 'Stade Armand-Cesari', 'Bastia', '29 avril 2023', 'FC Bastia', 'Bastia-min.png', '','exterieur'),
+    (34, 'Stade de la licorne', 'Amiens', '06 mai 2023', 'FC Sochaux', 'Sochaux-min.png', '', 'domicile'),
+    (35, 'Stade Gaston Gérard', 'Dijon', '13 mai 2023', 'Dijon FCO', 'Dijon-min.png', '','exterieur'),
+    (36, 'Stade de la licorne', 'Amiens', '20 mai 2023', 'SM Cean', 'Caen-min.png', '', 'domicile'),
+    (37, 'Stade Robert-Diochon', 'Rouen', '26 mai 2023', 'Quevilly-Rouen', 'QRM-min.png', '','exterieur'),
+    (38, 'Stade de la licorne', 'Amiens', '02 juin 2023', 'Laval', 'Laval-min.png', '', 'domicile');
 
 
 
---le classement des club de ligue 2--
 
 create table `classement`(
     num int,
@@ -96,9 +94,9 @@ insert into `classement`(num, equipe, img, journee, point, gagne, `null`, perdu,
     (20, 'AS Saint-Etienne', 'Saint_Etienne-min.png',18, 15, 4, 6, 8, -6);
 
 
---table utilisateur--
 
 create table `user`(
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nom varchar(25),
     prenom varchar(30),
     email varchar(60),
@@ -113,15 +111,11 @@ CREATE TABLE joueurs (
   numero_maillot INT,
   date_anniversaire DATE,
   date_arrivee DATE,
-  -- date_depart DATE,
   nationalite VARCHAR(255),
   poste VARCHAR(255),
   age INT,
   taille INT,
   matchs_joues INT,
---   matchs_remplacants INTEGER,
---   matchs_titulaires INTEGER,
-  -- photo_joueur VARCHAR(255),
   temps_de_jeu INT,
   cartons_jaunes INT,
   cartons_rouges INT,
@@ -133,23 +127,17 @@ CREATE TABLE joueurs (
 
 
 
-INSERT INTO joueurs (id, nom, prenom, numero_maillot, date_anniversaire, 
-date_arrivee, nationalite, poste, age, taille, matchs_joues, 
-temps_de_jeu, cartons_jaunes, cartons_rouges, buts_marques, passes_decisives,  joueurs_type)
+INSERT INTO joueurs (id, nom, prenom, numero_maillot, date_anniversaire,
+ date_arrivee, nationalite, poste, age, taille, matchs_joues,
+ temps_de_jeu, cartons_jaunes, cartons_rouges, buts_marques, passes_decisives,  joueurs_type)
 VALUES 
 
--- Type 1 - Attaquant
--- Type 2 - Défenseur
--- Type 3 - Milieu
--- Type 4 - Gardien
 
 (1, 'FOFANA', 'Ibrahim', 43, '1994-09-13', '2022-01-01', "France", 'Attaquant', 28, 180, 30, 2700, 1, 0, 15, 10, 1),
 (2, 'DIABATÉ', 'Diriky', 41, '2002-10-06', '2021-07-01', "Côte d'ivoire", 'Défenseur', 20, 194, 3, 2700, 0, 0, 0, 0, 2),
--- ///////////////////////// -- Gardien -- /////////////////////////////// --
 (3, 'GURTNER', 'Régis', 1, '1986-12-08', '2015-07-01', 'France', 'Gardien', 36, 182, 17, 1530, 0, 0, 0, 0, 4),
 (4, 'CHARRUAU', 'Paul', 16, '1993-07-12', '2022-07-01', 'France', 'Gardien', 29, 187, 2, 180, 0, 0, 0, 0, 4),
 (5, 'RONGIER', 'Matthieu',30, '2002-04-10', '2022-07-01', 'France', 'Gardien', 20, 176, 7, 585, 0, 0, 0, 0, 4),
--- ///////////////////////// -- Défenseurs -- /////////////////////////////// --
 (6, 'OPOKU', 'Nicholas', 4, '1997-08-11', '2021-07-01', 'Ghana', 'Défenseur central', 25, 190, 14, 1176, 4, 1, 0, 0, 2),
 (7, 'BARRY', 'Abdourahmane', 23, '2000-02-21', '2022-07-01', 'France', 'Défenseur central', 22, 185, 11, 773, 1, 0, 0, 0, 2),
 (8, 'FOFANA', 'Mamadou', 2, '1998-01-21', '2021-08-12', 'Sénégal', 'Défenseur central', 24, 186, 19, 1665, 6, 0, 2, 0, 2),
@@ -161,7 +149,6 @@ VALUES
 (14, 'XANTIPPE', 'Matthéo', 26, '2002-04-11', '2021-07-01', 'France', 'Défenseur latéral gauche', 20, 183, 19, 1109, 4, 0, 1, 1, 2),
 (15, 'OUATTARA', 'Kassoum', 44, '2004-10-14', '2022-07-01', 'France', 'Défenseur latéral gauche', 18, 176, 5, 366, 1, 0, 0, 0, 2),
 (16, 'SY', 'Harouna', 18, '1996-03-30', '2021-07-29', 'France', 'Défenseur latéral gauche', 26, 170, 0, 0, 0, 0, 0, 0, 2),
--- ///////////////////////// -- Mileux de terrain -- /////////////////////////////// --
 (17, 'FOFANA', 'Mamadou', 6, '2000-09-17', '2021-07-01', 'France', 'Milieu centre', 22, 177, 17, 987, 3, 0, 3, 0, 3),
 (18, 'GOMIS', 'Iron', 29, '1999-11-08', '2020-07-01', 'France', 'Milieu centre', 23, 182, 17, 1183, 2, 0, 0, 3, 3),
 (19, 'LACHUER', 'Mathis', 20, '2000-08-31', '2021-02-01', 'France', 'Milieu', 22, 170, 11, 363, 2, 0, 0, 0, 3),
@@ -169,7 +156,6 @@ VALUES
 (21, 'BARIKI', 'Mehdi', 11, '2000-03-20', '2022-07-01', 'France', 'Milieu Offensif droit', 23, 180, 1, 0, 0, 0, 1, 0, 3),
 (22, 'BENET', 'Jessy', 21, '1995-06-24', '2021-09-07', 'France', 'Meneur de jeu', 27, 186, 17, 1091, 1, 0, 3, 1, 3),
 (23, 'KAKUTA', 'Gaël', 96, '1991-06-21', '2022-10-05', 'France', 'Meneur de jeu', 31, 173, 9, 534, 1, 0, 5, 0, 3),
--- ///////////////////////// -- Attaquant -- /////////////////////////////// --
 (24, 'CISSÉ', 'Papiss', 18, '1985-06-03', '2022-09-01', 'France', 'Attaquant pivot', 37, 180, 12, 699, 0, 0, 6, 1, 1),
 (25, 'LEAUTEY', 'Antoine', 7, '1996-04-14', '2022-07-01', 'France', 'Ailier gauche', 26, 172, 17, 1401, 2, 0, 2, 2, 1),
 (26, 'BANDÉ', 'Hassane', 11, '1998-10-30', '2022-08-25', 'Burkina Faso', 'Ailier gauche', 24, 178, 11, 213, 0, 0, 1, 0, 1),
@@ -177,7 +163,6 @@ VALUES
 (28, 'GOMEZ', 'Charbel', 31, '2001-01-27', '2021-07-01', 'Bénin', 'Attaquant', 21, 184, 0, 0, 0, 0, 0, 0, 1),
 (29, 'CHIBOZO', 'Ange', 10, '2003-07-01', '2022-07-01', 'Bénin', 'Attaquant', 19, 176, 17, 459, 0, 0, 0, 3, 1),
 (30, 'ILENIKHENA', 'George', 9, '2006-08-16', '2022-07-01', 'France', 'Attaquant', 16, 185, 1, 19, 0, 0, 0, 0, 1),
--- ///////////////////////// -- Transferts -- /////////////////////////// --
 (31, 'BADJI','Aliou',  null, '1997-10-10', null, 'France', 'Attaquant - Avant-centre', 25, 189 , null, null , null, null, null, null, 1),
 (32, 'DEGRUMELLE','Matéo', null, '2003-08-22', null, 'France', 'Défenseur - Arrière droit', 19, 176, null,  null, null, null, null, null, 2),
 (33, 'DUPAYS','Henri', null, '2004-01-22', null, 'France', 'Milieu défensif', 18, null, null, null, null, null, null, null, 3),
@@ -218,7 +203,6 @@ CREATE TABLE staff (
   prenom VARCHAR(255) NOT NULL,
   fonction VARCHAR(255) NOT NULL,
   date_arrivee DATE,
-  -- date_depart DATE,
   nationalite VARCHAR(255),
   age INT,
   staff_type INT
@@ -227,10 +211,6 @@ CREATE TABLE staff (
 INSERT INTO staff (id, nom, prenom, fonction, date_arrivee, nationalite, age, staff_type)
 VALUES
 
--- Type 1 -- Président/Directeur
--- Type 2 -- Entraineur
--- Type 3 -- Médecin/Santé
--- Type 4 -- Autres
 (1, 'HINSCHBERGER', 'Philippe', 'Entraîneur', '2021-06-17', 'France', 63, 2),
 (2, 'JOANNIN', 'Bernard', 'Président', '2011-07-01', 'France', 73, 1),
 (3, 'DE PERCIN', 'Francis', 'Entraîneur adjoint', '2021-06-17', 'France', 53, 2),
@@ -248,8 +228,6 @@ VALUES
 
 CREATE TABLE transferts_2022_2023 (
   id INT PRIMARY KEY,
-  -- prenom_joueur VARCHAR(255) NOT NULL,
-  -- nom_joueur VARCHAR(255) NOT NULL,
   valeur_joueur VARCHAR(255) NOT NULL,
   club_depart VARCHAR(255) NOT NULL,
   club_arrivee VARCHAR(255) NOT NULL,
@@ -261,7 +239,6 @@ CREATE TABLE transferts_2022_2023 (
 
 INSERT INTO transferts_2022_2023 (id, valeur_joueur, club_depart, club_arrivee, montant, `date`, joueurs_id)
 VALUES 
--- ///////////////////////////////// Arrivées 22/23 /////////////////////////// --
 (1, '1,80 M€', 'El ahly', 'Amiens SC', '1,8M€', '', 31),
 (2, '4,50 M€', 'RC Lens', 'Amiens SC', 'Transfert libre', '', 23),
 (3, '2,50 M€', 'Rennes', 'Amiens SC', 'Transfert libre', '', 10),
@@ -286,7 +263,6 @@ VALUES
 (22, '150 K€', 'Red Star FC', 'Amiens SC', 'Fin du prêt', '30 juin 2022', 37),
 (23, '25 K€', 'US Orléans', 'Amiens SC', 'Fin du prêt', '30 juin 2022', 38),
 
---//////////////////////////////// Départs 22/23 //////////////////////// --
 (24, '1,80 M€', 'Amiens SC', 'Alanyaspor', 'Transfert libre', '', 39),
 (25, '900 K€', 'Amiens SC', 'Sundowns', 'Transfert libre', '', 40),
 (26, '300 K€', 'Amiens SC', 'Quevilly Rouen', 'Transfert libre', '', 41),
@@ -309,7 +285,6 @@ VALUES
 (43, '1,80 M€', 'Amiens SC', 'El Ahly', 'Fin du prêt', '30 juin 2022', 31),
 (44, '1,30 M€', 'Amiens SC', 'FC Nantes', 'Fin du prêt', '30 juin 2022', 52),
 
---//////////////////////////////// Départs 21/22 //////////////////////// --
 (45, '8,00 M€', 'Amiens SC', 'RC Lens', '5,00 M€', '1 juil. 2021', 23),
 (46, '2,50 M€', 'Amiens SC', 'Lecce', '600 K€', '1 juil. 2021', 54),
 (47, '500 K€', 'Amiens SC', 'Lecce', '300 K€', '29 juil. 2021', 55),
@@ -335,7 +310,6 @@ VALUES
 (67, '800 K€', 'Amiens SC', 'FC Nantes', 'Fin du prêt', '30 juin 2021', 64),
 (68, '800 K€', 'Amiens SC', 'LOSC Lille B', 'Fin du prêt', '30 juin 2021', 15),
 
--- ///////////////////////////////// Arrivées 23/24 /////////////////////////// --
 (69, '1,50 M€', 'G. Bordeaux', 'Amiens SC', 'Fin du prêt', '30 juin 2023', 31),
 (70, '600 K€', 'AEL Limassol', 'Amiens SC', 'Fin du prêt', '30 juin 2023', 34),
 (71, '450 K€', 'Concarneau', 'Amiens SC', 'Fin du prêt', '30 juin 2023', 48),
@@ -344,8 +318,3 @@ VALUES
 (74, '200 K€', 'Borgo', 'Amiens SC', 'Fin du prêt', '30 juin 2023', 51),
 (75, '200 K€', 'Stade Briochin', 'Amiens SC', 'Fin du prêt', '30 juin 2023', 37),
 (76, '-', 'US Boulogne', 'Amiens SC', 'Fin du prêt', '30 juin 2023', 33);
-
-
-
--- (1, '', '', 'Amiens SC', '', '', '')
--- (1, '', '', 'Amiens SC', '', '', '')
