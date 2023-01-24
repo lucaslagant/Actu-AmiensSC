@@ -91,4 +91,62 @@ class Joueur{
         
         return false;
     }
+
+    /**
+     * Créer un produit
+     *
+     * @return void
+     */
+    public function creer(){
+
+        // Ecriture de la requête SQL en y insérant le nom de la table
+        $sql = "INSERT INTO " . $this->table . " SET id=:id, nom=:nom, prenom=:prenom, numero_maillot=:numero_maillot,  date_anniversaire=:date_anniversaire, date_arrivee=:date_arrivee, nationnalite=:nationnalite,  poste=:poste, age=:age, taille=:taille, match_joues=:match_joues, temps_de_jeu=:temps_de_jeu, cartons_jaunes=:cartons_jaunes, cartons_rouges=:cartons_rouges, buts_marques=:buts_marques, passes_decisives=:passes_decisives, joueurs_type=:joueurs_type";
+
+        // Préparation de la requête
+        $query = $this->connexion->prepare($sql);
+
+        // Protection contre les injections
+        $this->id=htmlspecialchars(strip_tags($this->id));
+        $this->nom=htmlspecialchars(strip_tags($this->nom));
+        $this->prenom=htmlspecialchars(strip_tags($this->prenom));
+        $this->numero_maillot=htmlspecialchars(strip_tags($this->numero_maillot));
+        $this->date_anniversaire=htmlspecialchars(strip_tags($this->date_anniversaire));
+        $this->date_arrivee=htmlspecialchars(strip_tags($this->date_arrivee));
+        $this->nationnalite=htmlspecialchars(strip_tags($this->nationnalite));
+        $this->poste=htmlspecialchars(strip_tags($this->poste));
+        $this->age=htmlspecialchars(strip_tags($this->age));
+        $this->taille=htmlspecialchars(strip_tags($this->taille));
+        $this->match_joues=htmlspecialchars(strip_tags($this->match_joues));
+        $this->temps_de_jeu=htmlspecialchars(strip_tags($this->temps_de_jeu));
+        $this->cartons_jaunes=htmlspecialchars(strip_tags($this->cartons_jaunes));
+        $this->cartons_rouges=htmlspecialchars(strip_tags($this->cartons_rouges));
+        $this->buts_marques=htmlspecialchars(strip_tags($this->buts_marques));
+        $this->passes_decisives=htmlspecialchars(strip_tags($this->passes_decisives));
+        $this->joueurs_type=htmlspecialchars(strip_tags($this->joueurs_type));
+
+        // Ajout des données protégées
+        $query->bindParam(":id", $this->id);
+        $query->bindParam(":nom", $this->nom);
+        $query->bindParam(":prenom", $this->prenom);
+        $query->bindParam(":numero_maillot", $this->numero_maillot);
+        $query->bindParam(":date_anniversaire", $this->date_anniversaire);
+        $query->bindParam(":date_arrivee", $this->date_arrivee);
+        $query->bindParam(":nationnalite", $this->nationnalite);
+        $query->bindParam(":poste", $this->poste);
+        $query->bindParam(":age", $this->age);
+        $query->bindParam(":taille", $this->taille);
+        $query->bindParam(":match_joues", $this->match_joues);
+        $query->bindParam(":temps_de_jeu", $this->temps_de_jeu);
+        $query->bindParam(":cartons_jaunes", $this->cartons_jaunes);
+        $query->bindParam(":cartons_rouges", $this->cartons_rouges);
+        $query->bindParam(":buts_marques", $this->buts_marques);
+        $query->bindParam(":passes_decisives", $this->passes_decisives);
+        $query->bindParam(":joueurs_type", $this->joueurs_type);
+
+        // Exécution de la requête
+        if($query->execute()){
+            return true;
+        }
+        return false;
+    }
 }

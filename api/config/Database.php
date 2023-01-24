@@ -22,3 +22,7 @@ class Database{
         return $this->connexion;
     }   
 }
+
+        return $this->connexion;
+    }   
+}
