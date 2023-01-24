@@ -54,22 +54,34 @@
                         equipe
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
-                        journee
+                        <div class="flex justify-center">
+                            journee
+                        </div>
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg max-lg:hidden max-md:text-base">
-                        match gagne
+                        <div class="flex justify-center">
+                            match gagne
+                        </div>
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
-                        match null
+                        <div class="flex justify-center">
+                            match null
+                        </div>
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
-                        match perdu
+                        <div class="flex justify-center">
+                            match perdu
+                        </div>
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
-                        différence de but
+                        <div class="flex justify-center">
+                            différence de but
+                        </div>
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg  max-md:text-base">
-                        point
+                        <div class="flex justify-center">
+                            point
+                        </div>   
                     </th>
                 </tr>
             </thead>
@@ -91,22 +103,34 @@
                             </div>
                         </td>
                         <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
-                            <?= $clas->journee ?>
+                            <div class="flex justify-center">
+                                <?= $clas->journee ?>
+                            </div>
                         </td>
                         <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
-                            <?= $clas->gagne ?>
+                            <div class="flex justify-center">
+                                <?= $clas->gagne ?>
+                            </div>
                         </td>
                         <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
-                            <?= $clas->null ?>
+                            <div class="flex justify-center">
+                                <?= $clas->null ?>
+                            </div>
                         </td>
                         <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
-                            <?= $clas->perdu ?>
+                            <div class="flex justify-center">
+                                <?= $clas->perdu ?>
+                            </div>
                         </td>
                         <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
-                            <?= $clas->diff ?>
+                            <div class="flex justify-center">
+                                <?= $clas->diff ?>
+                            </div>
                         </td>
                         <td class="px-6 py-4 text-lg max-md:text-base">
-                            <?= $clas->point ?>
+                            <div class="flex justify-center">
+                                <?= $clas->point ?>
+                            </div> 
                         </td>
                     </tr>
                 <?php endforeach; ?> 
