@@ -77,7 +77,7 @@
                     </li>
 
                     <li>
-                        <a href="#"
+                        <a href="Profil.php"
                             class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-rose-50 text-rose-700 hover:text-rose-500 border-l-4 border-transparent hover:border-fuchsia-300 pl-6">
                             <span class="inline-flex justify-center items-center ml-4">
                                 <i class='bx bxs-user'></i>

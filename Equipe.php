@@ -243,7 +243,7 @@
             </div>
             <div class="swiper-slide">
                 <button onclick="toggleModal('modal-id')">
-                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -259,7 +259,7 @@
             </div>            
             <div class="swiper-slide">
                 <button onclick="toggleModal('modal-id')">
-                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -275,7 +275,7 @@
             </div>            
             <div class="swiper-slide">
                 <button onclick="toggleModal('modal-id')">
-                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY
@@ -291,7 +291,7 @@
             </div>            
             <div class="swiper-slide">
                 <button onclick="toggleModal('modal-id')">
-                    <img src="https://lempreintedigitale.com/wp-content/uploads/2022/03/clubs-foot-europeens-plus-suivis-reseaux-sociaux-min.jpeg" alt="joueur random" class="h-96 rounded-lg">
+                    <img src="img/Antoine_LEAUTEY.jpg" alt="joueur random" class="h-96 rounded-lg">
                 </button>
                 <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                     Antoine LEAUTEY

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S'inscrire</title>
+    <title>Profil</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='style.css' rel='stylesheet'>
@@ -36,21 +36,25 @@
     <section class="text-rose-800">
 
         <div class="flex justify-center p-10">
-            <div>
-                <img src="img/user.png" alt="User par défaut" class="rounded-full">
-            </div>
-            <div>
-                <div>
-                    Nom d'utilisateur :
-                    <span>nomdu80</span>
+            <div class="bg-red-200 flex flex-row p-14 rounded-lg">
+
+                <div class="pt-10 pr-10">
+                    <img src="img/user.png" alt="User par défaut" class="rounded-full h-48">
                 </div>
-                <div>
-                    Adresse mail :
-                    <span>nomdu80@gmail.com</span>
-                </div>
-                <div>
-                    Téléphone :
-                    <span>06 42 24 24 42</span>
+
+                <div class="text-lg tracking-wide bg-rose-50 rounded-lg">
+                    <div class="p-8">
+                        <span class="font-semibold">Nom d'utilisateur :</span>
+                        <span>nomdudfcgtvbujn</span>
+                    </div>
+                    <div class="p-8">
+                        <span class="font-semibold">Adresse mail :</span>
+                        <span>nomdu80@gmail.com</span>
+                    </div>
+                    <div class="p-8">
+                        <span class="font-semibold">Téléphone :</span>
+                        <span>06 42 24 24 42</span>
+                    </div>
                 </div>
             </div>
         </div>
