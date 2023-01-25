@@ -76,24 +76,24 @@ create table `classement`(
 insert into `classement`(num, equipe, img, journee, point, gagne, `null`, perdu, diff) values
     (1, 'Havre AC', 'Le_Havre-min.png', 19,42, 12, 6, 1, 22),
     (2, 'Girondins de Bordeaux', 'Bordeaux-min.png', 19, 33, 9, 6, 4, 11),
-    (4, 'FC Sochaux', 'Sochaux-min.png', 18, 30, 9, 3, 6, 11),
+    (4, 'FC Sochaux', 'Sochaux-min.png', 19, 30, 9, 3, 7, 10),
     (6, 'Amiens SC', 'Logo_Amiens_SC_3-min.png',19, 29, 8, 5, 6, 2),
     (5, 'Grenoble Foot 38', 'Grenoble-min.png',19, 30, 8, 6, 5, 3),
     (3, 'FC Metz', 'Metz-min.png', 19, 31, 9, 4, 6, 9),
-    (9, 'SM Cean', 'Caen-min.png', 18, 25, 6, 7, 5, 2),
+    (7, 'SM Cean', 'Caen-min.png', 19, 28, 7, 7, 5, 3),
     (10, 'Quevilly-Rouen', 'QRM-min.png', 19, 25, 6, 7, 6, -1),
     (11, 'Valenciennes FC', 'Valenciennes-min.png', 19, 25, 6, 7, 6, -1),
-    (8, 'Paris FC', 'Paris-min.png', 19, 27, 7, 6, 6, -2),
-    (7, 'SC Bastia', 'Bastia-min.png', 19, 28, 8, 4, 7, -3),
+    (9, 'Paris FC', 'Paris-min.png', 19, 27, 7, 6, 6, -2),
+    (8, 'SC Bastia', 'Bastia-min.png', 19, 28, 8, 4, 7, -3),
     (13, 'EA Guinganp', 'Guingamp-min.png', 19, 24, 6, 6, 7, -3),
     (15, 'Pau FC', 'Pau-min.png', 19, 22, 5, 7, 7, -6),
     (12, 'FC Annecy', 'Annecy-min.png', 19, 24, 6, 6, 7, 1),
     (14, 'Laval', 'Laval-min.png', 19, 23, 7, 2, 10, -6),
     (16, 'Dijon FCO', 'Dijon-min.png', 19, 21, 5, 6, 8, -1),
     (17, 'Rodez AF', 'Rodez-min.png', 19, 19, 4, 7, 8, -8),
-    (19, 'Nîmes', 'Nimes-min.png', 19, 16, 4, 4, 11, -11),
-    (18, 'Niort', 'Niort-min.png', 18, 17, 4, 5, 9, -13),
-    (20, 'AS Saint-Etienne', 'Saint_Etienne-min.png',18, 15, 4, 6, 8, -6);
+    (20, 'Nîmes', 'Nimes-min.png', 19, 16, 4, 4, 11, -11),
+    (19, 'Niort', 'Niort-min.png', 19, 17, 4, 5, 10, -14),
+    (18, 'AS Saint-Etienne', 'Saint_Etienne-min.png', 19, 18, 5, 6, 8, -6);
 
 
 --table utilisateur--

@@ -48,7 +48,9 @@
             <thead class="text-xs  uppercase bg-rose-800 text-rose-300 overflow-hidden">
                 <tr>
                     <th scope="col" class="px-6 py-3 text-lg max-md:text-base">
-                        num
+                        <div class="flex justify-center">
+                            num
+                        </div>
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg max-md:text-base">
                         equipe
@@ -90,7 +92,9 @@
                 <?php foreach ($tab as $clas):?> 
                     <tr class=" border-b bg-rose-700 border-rose-700 ">
                         <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-white text-lg max-md:text-base">
-                            <?= $clas->num ?>
+                            <div class="flex justify-center">
+                                <?= $clas->num ?>
+                            </div>
                         </th>
                         <td class="px-6 py-4">
                             <div class="md:flex">
