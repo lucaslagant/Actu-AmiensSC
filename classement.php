@@ -104,6 +104,17 @@
                                 <div class="md:py-11 text-lg max-md:text-base">
                                     <?= $clas->equipe ?>
                                 </div>
+                                <div class="py-11">
+                                    <?php if($clas->num <= 2):?>
+                                        <svg class="h-8 w-8 text-rose-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18"/>
+                                        </svg>
+                                    <?php elseif($clas->num >= 17):?>
+                                        <svg class="h-8 w-8 text-rose-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3"/>
+                                        </svg>
+                                    <?php endif; ?>
+                                </div>
                             </div>
                         </td>
                         <td class="px-6 py-4 text-lg max-lg:hidden max-md:text-base">
