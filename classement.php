@@ -98,9 +98,9 @@
                         </th>
                         <td class="px-6 py-4">
                             <div class="flex">
-                                <div class="md:flex w-3/4">
-                                    <div>
-                                        <img src="equipe/<?= $clas->img ?>" alt="<?= $clas->equipe ?>">
+                                <div class="xl:flex w-3/4">
+                                    <div class="max-md:w-100 max-md:h-200">
+                                        <img src="equipe/<?= $clas->img ?>" alt="<?= $clas->equipe ?>" >
                                     </div>
                                     <div class="md:py-11 text-lg max-md:text-base">
                                         <?= $clas->equipe ?>
