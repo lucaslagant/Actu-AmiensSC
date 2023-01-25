@@ -97,14 +97,16 @@
                             </div>
                         </th>
                         <td class="px-6 py-4">
-                            <div class="md:flex">
-                                <div>
-                                    <img src="equipe/<?= $clas->img ?>" alt="<?= $clas->equipe ?>">
+                            <div class="flex">
+                                <div class="md:flex w-3/4">
+                                    <div>
+                                        <img src="equipe/<?= $clas->img ?>" alt="<?= $clas->equipe ?>">
+                                    </div>
+                                    <div class="md:py-11 text-lg max-md:text-base">
+                                        <?= $clas->equipe ?>
+                                    </div>
                                 </div>
-                                <div class="md:py-11 text-lg max-md:text-base">
-                                    <?= $clas->equipe ?>
-                                </div>
-                                <div class="py-11">
+                                <div class="py-11 w-1/4">
                                     <?php if($clas->num <= 2):?>
                                         <svg class="h-8 w-8 text-rose-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18"/>
@@ -151,6 +153,20 @@
                 <?php endforeach; ?> 
             </tbody>      
         </table>
+    </div>
+    <div class="flex mx-7 text-rose-800 text-lg">
+        <div class="flex">
+            <svg class="h-8 w-8"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18"/>
+            </svg>
+            <p>: Ligue 1</p>
+        </div>
+        <div class="flex ml-2">
+            <svg class="h-8 w-8"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3"/>
+            </svg>
+            <p>: National</p>
+        </div>
     </div> 
     <br>       
     <?php include('Footer.php'); ?>
