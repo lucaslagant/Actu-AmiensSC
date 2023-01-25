@@ -23,18 +23,15 @@
 
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
-                <a href="/homeconnect.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Accueil</a>
+                <a href="/../homeconnect.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Accueil</a>
                 <a href="/views/equipe.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Équipe</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Classement</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Résultat</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Calendrier</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500">Contact</a>
             </div>
-            <div>
-                <a href="/controllers/connexion-ctrl.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full mx-5">Se connecter</a>
-            </div>
-            <div>
-                <a href="/controllers/inscription-ctrl.php" class="block text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full">S'inscrire</a>
-            </div>
+            <div class="text-2xl text-rose-800 hover:text-rose-500">
+            <a href="/views/profil.php"><i class='bx bx-user'></i></a>
+            </div>            
         </div>
     </nav>

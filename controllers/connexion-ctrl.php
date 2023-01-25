@@ -63,7 +63,15 @@ if (!empty($_POST)) {
 
         // Ici l'utilisateur et le mot de passe sont corrects
         // On va pourvoir ouvrir la session
-        var_dump($_SESSION);
+        // On stocke dans $_SESSION les info de l'user 
+        $_SESSION["user"] = [
+            "id" => $user["id"],
+            "nom" => $user["nom"],
+            "prenom" => $user["prenom"],
+            "email" => $user["email"]
+        ];
+        // On redirige vers la page de profil
+        header("Location: /../homeconnect.php");
 
        
     }
