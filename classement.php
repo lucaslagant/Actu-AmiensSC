@@ -67,7 +67,7 @@
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
                         <div class="flex justify-center">
-                            match null
+                            match nul
                         </div>
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
