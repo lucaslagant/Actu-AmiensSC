@@ -43,7 +43,7 @@
         </div>
     </nav>
     <br><h1 class="text-lg text-rose-800 font-bold text-4xl mx-7 max-md:text-lg">Les Résultat d'Amiens SC en Ligue 2</h1><br>
-    <div class="p-4 m-4 max-md:p-0 max-md:m-0">
+    <div class="p-4 m-4 max-lg:p-0 max-lg:m-5">
         <?php foreach ($tab as $cal):?> 
             <div class="flex text-rose-900 px-4 w-full max-md:justify-">
                 <div class="text-2xl w-1/3 flex justify-center max-md:text-sm max-md:w-1/4">
@@ -57,7 +57,7 @@
                 </div>
             </div>
             
-                <div class="flex bg-rose-700 w-full text-sm text-left text-rose-300 rounded-full m-3">
+                <div class="flex bg-rose-700 w-full text-sm text-left text-rose-300 rounded-full m-3 max-xl:m-1 max-lg:m-0">
                     <?php if($cal->localisation == "Exterieur"): ?>
                         
                         <div class="px-9 py-4 w-1/3">
@@ -65,7 +65,7 @@
                                 <div>
                                     <img src="equipe/<?= $cal->img ?>" alt="<?= $cal->equipe ?>">
                                 </div>
-                                <div class="grid place-items-center text-xl max-md:text-base">
+                                <div class="grid place-items-center text-xl max-md:text-base max-sm:text-sm">
                                     <?= $cal->equipe ?>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
                                 <div>
                                     <img src="equipe/Amiens-min.png" alt="Amiens SC">
                                 </div>
-                                <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base lg:hidden">
+                                <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base lg:hidden ">
                                     Amiens SC
                                 </div>        
                             </div>

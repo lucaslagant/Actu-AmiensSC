@@ -43,16 +43,16 @@
         </div>
     </nav>
     <br><h1 class="text-lg text-rose-800 font-bold text-4xl mx-7 max-md:text-lg">Le Classement de la Ligue 2 BKT</h1><br>
-    <div class=" shadow-md rounded-xl  overflow-hidden mx-7">
+    <div class=" shadow-md rounded-xl  overflow-hidden mx-7 pr-4">
         <table class="table-auto w-full text-sm text-left text-rose-300">
             <thead class="text-xs  uppercase bg-rose-800 text-rose-300 overflow-hidden">
                 <tr>
-                    <th scope="col" class="px-6 py-3 text-lg max-md:text-base">
+                    <th scope="col" class="px-6 py-3 text-lg max-md:text-base max-md:w-1/3">
                         <div class="flex justify-center">
                             num
                         </div>
                     </th>
-                    <th scope="col" class="px-6 py-3 text-lg max-md:text-base">
+                    <th scope="col" class="px-6 py-3 text-lg max-md:text-base max-md:w-1/3">
                         equipe
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg  max-lg:hidden max-md:text-base">
@@ -80,8 +80,8 @@
                             différence de but
                         </div>
                     </th>
-                    <th scope="col" class="px-6 py-3 text-lg  max-md:text-base">
-                        <div class="flex justify-center">
+                    <th scope="col" class="px-6 py-3 text-lg  max-md:text-base max-md:w-1/3">
+                        <div class="flex justify-center max-md:justify-start">
                             point
                         </div>   
                     </th>
@@ -145,7 +145,7 @@
                             </div>
                         </td>
                         <td class="px-6 py-4 text-lg max-md:text-base">
-                            <div class="flex justify-center">
+                            <div class="flex justify-center max-md:justify-start">
                                 <?= $clas->point ?>
                             </div> 
                         </td>
