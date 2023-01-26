@@ -24,7 +24,12 @@
         $mdp1 = $_POST['mdp1'];
     }
     else {
-        $mdp1 = Null;
+        if (isset($_POST['mdpb']) && $_POST['mdpb'] != "") {
+            $mdp1 = $_POST['mdpb'];
+        }
+        else {
+            $mdp1 = Null;
+        }
     }
 
     if (isset($_POST['mdp2']) && $_POST['mdp2'] != "") {

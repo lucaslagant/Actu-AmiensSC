@@ -66,7 +66,7 @@
                                 <br><br>
                                 
                                 <label for="mdp1">Mot de passe : </label>
-                                <input type="text" name="mdp1" value="<?= $user->mdp ?>" class="rounded border-rose-300 border-2">
+                                <input type="text" name="mdp1" class="rounded border-rose-300 border-2">
                                 <br><br>
                                 
                                 <label for="mdp2">Réécrivez le mot de passe : </label>
