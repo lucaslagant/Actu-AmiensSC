@@ -71,6 +71,11 @@
 
     $vlogin = verif_email($email);
 
+    if(!($vmdp && $vlogin)){
+        header("Location: form_modif_user.php");
+        exit;
+    }
+
     if($mdp1 = $mdp2){
         $mdp = $mdp1;
     }
@@ -93,7 +98,7 @@
         $requete->bindValue(":nom", $nom, PDO::PARAM_INT);
         $requete->bindValue(":prenom", $prenom, PDO::PARAM_STR);
         $requete->bindValue(":email", $email, PDO::PARAM_STR);
-        $requete->bindValue(":mdp", $mdp, PDO::PARAM_STR);
+        $requete->bindValue(":mdp", $hmdp, PDO::PARAM_STR);
         
 
         $requete->execute();
