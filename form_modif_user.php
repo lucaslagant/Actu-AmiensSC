@@ -46,7 +46,7 @@
         <div class="">
             <div class="flex justify-center text-rose-800 pt-10 pb-10">
                 <div class="inline-block shadow-lg bg-rose-100 p-8 px-32 m-4">
-                <form action="">
+                <form action="script_modif.php" method="post">
                     
                     <span class="text-3xl">Modifier les information</span>
                     <br><br><br>
@@ -54,30 +54,31 @@
                         <?php foreach($tab as $user):?>
                             <div class="flex flex-col">
                                 <label for="nom">Nom : </label>
-                                <input type="text" id="nom" value="<?= $user->nom ?>" class="rounded border-rose-300 border-2">
+                                <input type="text" name="nom" value="<?= $user->nom ?>" class="rounded border-rose-300 border-2">
                                 <br><br>
                                 
-                                <label for="nom">Prénom : </label>
-                                <input type="text" id="nom" value="<?= $user->prenom ?>" class="rounded border-rose-300 border-2">
+                                <label for="prenom">Prénom : </label>
+                                <input type="text" name="prenom" value="<?= $user->prenom ?>" class="rounded border-rose-300 border-2">
                                 <br><br>
                                 
-                                <label for="nom">Email : </label>
-                                <input type="text" id="nom" value="<?= $user->email ?>" class="rounded border-rose-300 border-2">
+                                <label for="email">Email : </label>
+                                <input type="text" name="email" value="<?= $user->email ?>" class="rounded border-rose-300 border-2">
                                 <br><br>
                                 
-                                <label for="nom">Mot de passe : </label>
-                                <input type="text" id="nom" value="<?= $user->mdp ?>" class="rounded border-rose-300 border-2">
+                                <label for="mdp1">Mot de passe : </label>
+                                <input type="text" name="mdp1" value="<?= $user->mdp ?>" class="rounded border-rose-300 border-2">
                                 <br><br>
                                 
-                                <label for="nom">Réécrivez le mot de passe : </label>
-                                <input type="text" id="nom"  class="rounded border-rose-300 border-2">
+                                <label for="mdp2">Réécrivez le mot de passe : </label>
+                                <input type="text" name="mdp2"  class="rounded border-rose-300 border-2">
+                                <input type="hidden" name="mdpb" value="<?= $user->mdp ?>" class="rounded border-rose-300 border-2">
                                 <br><br>
                             </div>
                         <?php endforeach; ?>
                         
                         <div class="flex justify-center">
                             <input type="submit" value="Modifier" class="px-12 block text-rose-50 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-600 px-5 py-2 rounded-full">
-                            <a href="#" class="ml-6 block text-rose-800 inline-block mt-0 hover:text-rose-800 bg-rose-300 hover:bg-white px-5 py-2 rounded-full">Retour</a>
+                            <a href="profil.php" class="ml-6 block text-rose-800 inline-block mt-0 hover:text-rose-800 bg-rose-300 hover:bg-white px-5 py-2 rounded-full">Retour</a>
                         </div>
                 </form>
                 </div>
