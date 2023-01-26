@@ -103,6 +103,9 @@ create table `user`(
     mdp varchar(60)
 );
 
+insert into `user`(nom, prenom, email, mdp) values
+('fdssd', 'dscdf', 'moi@email.fr', '123azeAZE');
+
 
 CREATE TABLE joueurs (
   id INT PRIMARY KEY AUTO_INCREMENT,
