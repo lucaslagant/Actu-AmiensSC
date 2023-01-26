@@ -45,6 +45,45 @@
         exit;
     }
 
+    function complex_password($mdp){
+        $rgx = "/^\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])\S*$/";
+        
+        if(preg_match($rgx, $mdp)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    function verif_email($email){
+        $rgx = "/^[a-z0-9.-]+@[a-z0-9.-]{2,}.[a-z]{2,4}$/";
+
+        if(preg_match($rgx, $email)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    $vmdp = complex_password($mdp1);
+
+    $vlogin = verif_email($email);
+
+    if($mdp1 = $mdp2){
+        $mdp = $mdp1;
+    }
+    elseif(password_verify($mdp1, $mdp2)){
+        $mdp = $mdp1;
+    }
+    else{
+        header("Location: form_modif_user.php");
+        exit;
+    }
+
+    $hmdp = password_hash($mdp, PASSWORD_DEFAULT);
+
     require "db.php"; 
     $db = connexionBase();
 
@@ -54,7 +93,7 @@
         $requete->bindValue(":nom", $nom, PDO::PARAM_INT);
         $requete->bindValue(":prenom", $prenom, PDO::PARAM_STR);
         $requete->bindValue(":email", $email, PDO::PARAM_STR);
-        $requete->bindValue(":mdp", $mdp1, PDO::PARAM_STR);
+        $requete->bindValue(":mdp", $mdp, PDO::PARAM_STR);
         
 
         $requete->execute();
