@@ -43,7 +43,7 @@
         </div>
     </nav>
     <br><h1 class="text-lg text-rose-800 font-bold text-4xl mx-7 max-md:text-lg">Le Classement de la Ligue 2 BKT</h1><br>
-    <div class=" shadow-md rounded-xl  overflow-hidden mx-7 pr-4">
+    <div class=" shadow-md rounded-xl  overflow-hidden mx-7">
         <table class="table-auto w-full text-sm text-left text-rose-300">
             <thead class="text-xs  uppercase bg-rose-800 text-rose-300 overflow-hidden">
                 <tr>
