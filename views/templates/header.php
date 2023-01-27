@@ -25,8 +25,8 @@
             <div class="text-base lg:flex-grow">
                 <a href="/../index.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Accueil</a>
                 <a href="/views/equipe.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Équipe</a>
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Classement</a>
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Résultat</a>
+                <a href="/views/classement.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Classement</a>
+                <a href="/views/resultat.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Résultat</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Calendrier</a>
                 <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500">Contact</a>
             </div>
