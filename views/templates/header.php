@@ -1,6 +1,16 @@
 <?php
 // Appelle d'un fichier init qui contient juste un session_start 
 require_once(dirname(__FILE__).'/../../utils/init.php');
+$bdd = new PDO('mysql:host=localhost; dbname=amiens_sc', 'admin' , 'Parker.2280700');
+if (isset($_SESSION['user'])) {
+    $requete = $bdd->prepare("SELECT * FROM user WHERE id=".$_SESSION["user"]["id"]."");
+    $requete->execute(array());
+    $tab = $requete->fetch(PDO::FETCH_OBJ);
+    $requete->closeCursor();
+}
+
+// var_dump($tab);
+// var_dump($_SESSION["user"]);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -10,6 +20,8 @@ require_once(dirname(__FILE__).'/../../utils/init.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actu-AmiensSC</title>
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -36,7 +48,7 @@ require_once(dirname(__FILE__).'/../../utils/init.php');
             </div>
             <?php if (isset($_SESSION['user'])) { ?> 
                 <div class="text-2xl text-rose-800 hover:text-rose-500">
-                    <a href="/views/profil.php"><i class='bx bx-user'></i></a>
+                    <a href="/views/profil.php?id=<?=$tab->id?>"><i class='bx bx-user'></i></a>
                 </div>
             <?php } 
             else { ?>

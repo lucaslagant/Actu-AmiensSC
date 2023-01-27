@@ -11,7 +11,7 @@
                         <input type="email" name="email" id="email" pattern="[[:alnum:]]([-_.]?[[:alnum:]])*@[[:alnum:]]([-.]?[[:alnum:]])*\.([a-z]{2,4})$" class="rounded border-rose-300 border-2" required>
                         <br><br>
                         <label for="mdp">Mot de passe : </label>
-                        <input type="password" name="mdp" id="mdp" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" class="rounded border-rose-300 border-2" required>
+                        <input type="password" name="mdp" id="mdp" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" class="rounded border-rose-300 border-2">
                         <br><br>
                     </div>
                     <div class="flex justify-center">
