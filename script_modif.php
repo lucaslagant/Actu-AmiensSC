@@ -100,7 +100,7 @@
 
     try {
         $requete = $db->prepare("UPDATE user SET nom = :nom, prenom = :prenom, email = :email, mdp = :mdp");
-        $requete->bindValue(":nom", $nom, PDO::PARAM_INT);
+        $requete->bindValue(":nom", $nom, PDO::PARAM_STR);
         $requete->bindValue(":prenom", $prenom, PDO::PARAM_STR);
         $requete->bindValue(":email", $email, PDO::PARAM_STR);
         $requete->bindValue(":mdp", $hmdp, PDO::PARAM_STR);

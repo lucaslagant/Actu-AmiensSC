@@ -62,7 +62,7 @@
                         
                         <div class="px-9 py-4 w-1/3">
                             <div class="lg:flex">
-                                <div>
+                                <div class="max-[280px]:hidden">
                                     <img src="equipe/<?= $cal->img ?>" alt="<?= $cal->equipe ?>">
                                 </div>
                                 <div class="grid place-items-center text-xl max-md:text-base max-sm:text-sm">
@@ -82,10 +82,10 @@
                                 <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base max-lg:hidden">
                                     Amiens SC
                                 </div>
-                                <div>
+                                <div class="max-[280px]:hidden">
                                     <img src="equipe/Amiens-min.png" alt="Amiens SC">
                                 </div>
-                                <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base lg:hidden ">
+                                <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base max-sm:text-sm lg:hidden">
                                     Amiens SC
                                 </div>        
                             </div>
@@ -95,10 +95,10 @@
 
                         <div class="px-9 py-4 w-1/3">
                             <div class="lg:flex ">
-                                <div>
+                                <div class="max-[280px]:hidden">
                                     <img src="equipe/Amiens-min.png" alt="Amiens SC">
                                 </div>
-                                <div class="grid place-items-center text-xl max-md:text-base">
+                                <div class="grid place-items-center text-xl max-md:text-base max-sm:text-sm">
                                     Amiens SC
                                 </div>
                             </div>
@@ -116,10 +116,10 @@
                                 <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base max-lg:hidden">
                                     <?= $cal->equipe ?>
                                 </div>
-                                <div>
+                                <div class="max-[280px]:hidden">
                                     <img src="equipe/<?= $cal->img ?>" alt="<?= $cal->equipe ?>">
                                 </div>
-                                <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base lg:hidden">
+                                <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base lg:hidden max-sm:text-sm">
                                     <?= $cal->equipe ?>
                                 </div>
                                     
