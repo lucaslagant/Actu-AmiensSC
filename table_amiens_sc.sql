@@ -55,7 +55,6 @@ insert into `calendrier` (journee, stade, lieu, `date`, equipe, img, score, loca
     (37, 'Stade Robert-Diochon', 'Rouen', '26 mai 2023', 'Quevilly-Rouen', 'QRM-min.png', '','Exterieur'),
     (38, 'Stade de la licorne', 'Amiens', '02 juin 2023', 'Laval', 'Laval-min.png', '', 'Domicile');
 
-E
 
 create table `classement`(
     num int,
