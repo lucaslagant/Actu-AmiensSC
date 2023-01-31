@@ -42,7 +42,7 @@
                 <?php if($transf->id == $image->id): ?>
                     <div class="text-lg flex-wrap">
                         <div class="flex flex-col justify-center">          
-                            <div class="flex justify-center l"><img class="w-1/6 h-1/6" src="joueur/<?= $image->img ?>" alt="<?= $transf->prenom ?> &nbsp; <?= $transf->nom ?>" ></div><br>
+                            <div class="flex justify-center l"><img class="w-1/4 h-1/4 max-md:w-1/2 max-md:h-1/2" src="joueur/<?= $image->img ?>" alt="<?= $transf->prenom ?> &nbsp; <?= $transf->nom ?>" ></div><br>
                             <div class="flex justify-center">
                                 <div class="flex justify-center max-md:flex-co bg-rose-700 w-full text-2xl text-left text-rose-300 rounded-full text-2xl w-1/5 max-md:text-lg max-md:rounded-md max-md:w-1/2 "> <?= $transf->prenom ?> &nbsp; <?= $transf->nom ?></div>
                             </div>
