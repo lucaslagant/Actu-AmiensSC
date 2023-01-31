@@ -36,7 +36,7 @@ $requete->closeCursor();
             </div>                  
             <div class="pb-10">
                 <a href="/controllers/modifUser-ctrl.php?id=<?=$tab->id?>" class="ml-6 block text-rose-800 inline-block mt-0 hover:text-rose-800 bg-rose-300 hover:bg-white px-5 py-2 rounded-full">Modifier</a>
-                <a href="/controllers/deconnection.php?id=<?=$tab->id?>" class="delete ml-6 block text-rose-50 inline-block mt-0 hover:text-rose-800 bg-rose-800 hover:bg-white px-5 py-2 rounded-full">Déconnexion</a>
+                <a href="/controllers/deconnection.php?id=<?=$tab->id?>" class="ml-6 block text-rose-50 inline-block mt-0 hover:text-rose-800 bg-rose-800 hover:bg-white px-5 py-2 rounded-full">Déconnexion</a>
             </div>
         </div>
     </div>

@@ -40,11 +40,13 @@
         </div>
     </footer>
 
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <!-- Script JS  -->
     <script src="/asset/js/script.js"></script>
     <!-- JS boxicons  -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-        <!-- Sweet Alert JS  -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Sweet Alert JS  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

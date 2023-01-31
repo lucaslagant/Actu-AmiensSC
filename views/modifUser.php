@@ -3,7 +3,7 @@
 require_once(dirname(__FILE__).'/../utils/init.php');
 
     $bdd = new PDO('mysql:host=localhost; dbname=amiens_sc', 'admin' , 'Parker.2280700');
-    $requete = $bdd->prepare("SELECT * FROM user WHERE id=".$_SESSION["user"]["id"]."");
+    $requete = $bdd->prepare("SELECT * FROM user WHERE id=".$_SESSION["user"]["id"].";");
     $requete->execute(array());
     $tab = $requete->fetch(PDO::FETCH_OBJ);
     $requete->closeCursor();
@@ -36,7 +36,7 @@ require_once(dirname(__FILE__).'/../utils/init.php');
                             
                                 
                                 <label for="mdp">Confirmé ou changer votre mot de passe </label>
-                                <input type="password" name="mdp"  class="rounded border-rose-300 border-2">
+                                <input type="password" name="mdp"  class="rounded border-rose-300 border-2" required>
                                 <br><br>
                             </div>
                   
