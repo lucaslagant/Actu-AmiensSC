@@ -45,7 +45,7 @@
 
         <div class="">
             <div class="flex justify-center text-rose-800 pt-10 pb-10">
-                <div class="inline-block shadow-lg bg-rose-100 p-8 px-32 m-4">
+                <div class="inline-block shadow-lg bg-rose-100 p-8 px-32 m-4 max-md:px-5 max-md:p-5 max-[280px]:px-0 max-[280px]:p-0 max-[280px]:m-0">
                 <form action="script_modif.php" method="post">
                     
                     <span class="text-3xl">Modifier les information</span>

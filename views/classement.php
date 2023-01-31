@@ -50,7 +50,7 @@ include dirname(__FILE__)."/templates/header.php";
                     </th>
                     <th scope="col" class="px-6 py-3 text-lg  max-md:text-base max-md:w-1/3">
                         <div class="flex justify-center max-md:justify-start">
-                            point
+                            points
                         </div>   
                     </th>
                 </tr>
