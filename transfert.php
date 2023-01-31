@@ -42,36 +42,41 @@
                 <?php if($transf->id == $image->id): ?>
                     <div class="text-lg flex-wrap">
                         <div class="flex flex-col justify-center">          
-                            <div class="flex justify-center"><img class="w-1/6 h-1/6" src="joueur/<?= $image->img ?>" alt="<?= $transf->prenom ?> &nbsp; <?= $transf->nom ?>" ></div><br>
+                            <div class="flex justify-center l"><img class="w-1/6 h-1/6" src="joueur/<?= $image->img ?>" alt="<?= $transf->prenom ?> &nbsp; <?= $transf->nom ?>" ></div><br>
                             <div class="flex justify-center">
-                                <div class="flex justify-center bg-rose-700 w-full text-2xl text-left text-rose-300 rounded-full text-2xl w-1/5"> <?= $transf->prenom ?> &nbsp; <?= $transf->nom ?></div>
+                                <div class="flex justify-center max-md:flex-co bg-rose-700 w-full text-2xl text-left text-rose-300 rounded-full text-2xl w-1/5 max-md:text-lg max-md:rounded-md max-md:w-1/2 "> <?= $transf->prenom ?> &nbsp; <?= $transf->nom ?></div>
                             </div>
                         </div>
                         <br>
-                        <div class="flex justify-evenly bg-rose-700 w-full text-lg text-left text-rose-300 rounded-full py-2">
-                            <div>
-                                <div class="flex justify-center">valeur du joueur :</div>   
-                                <div class="flex justify-center"><?= $transf->valeur_joueur ?></div>
-                            </div>
-                            <div>
-                                <div class="flex justify-center">transfert :</div>
-                                <div class="flex">
-                                    <div class="p-1 px-2"><?= $transf->club_depart ?></div>
-                                    <svg class="h-9 w-8"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                    </svg>
-                                    <div class="p-1 px-2"><?= $transf->club_arrivee ?></div>
-                                </div>
-                            </div>
+                        <div class="max-md: p-5">
+                            <div class="flex justify-evenly bg-rose-700 w-full text-lg text-left text-rose-300 rounded-full py-2  max-md:rounded-md max-md:flex-col">
 
-                            <div>
-                                <div class="flex justify-center"> montant du transfert :</div>
-                                <div class="flex justify-center"><?= $transf->montant ?></div>
-                            </div>
-
-                            <div>
-                                <div class="flex justify-center">date du transfert :</div>
-                                <div class="flex justify-center"><?= $transf->date ?></div>
+                                    <div>
+                                        <div class="flex justify-center">valeur du joueur :</div>   
+                                        <div class="flex justify-center"><?= $transf->valeur_joueur ?></div>
+                                    </div>
+                                    <br class="md:hidden">
+                                    <div>
+                                        <div class="flex justify-center">transfert :</div>
+                                        <div class="flex justify-center">
+                                            <div class="p-1 px-2"><?= $transf->club_depart ?></div>
+                                            <svg class="h-9 w-8"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                            </svg>
+                                            <div class="p-1 px-2"><?= $transf->club_arrivee ?></div>
+                                        </div>
+                                    </div>
+                                    <br class="md:hidden">
+                                    <div>
+                                        <div class="flex justify-center"> montant du transfert :</div>
+                                        <div class="flex justify-center"><?= $transf->montant ?></div>
+                                    </div>
+                                    <br class="md:hidden">
+                                    <div>
+                                        <div class="flex justify-center">date du transfert :</div>
+                                        <div class="flex justify-center"><?= $transf->date ?></div>
+                                    </div>
+                                
                             </div>
                         </div>
                     </div>
