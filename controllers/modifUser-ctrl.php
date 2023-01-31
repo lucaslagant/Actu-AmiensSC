@@ -51,7 +51,6 @@ require_once(dirname(__FILE__).'/../utils/init.php');
 
         $requete->execute();
         $requete->closeCursor();
-        header("Location: /../views/profil.php");
     }
     catch (Exception $e) {
         echo "Erreur : " . $requete->errorInfo()[2] . "<br>";

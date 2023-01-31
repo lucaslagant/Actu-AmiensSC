@@ -3,9 +3,6 @@ include dirname(__FILE__)."/templates/header.php";
 // Appelle d'un fichier init qui contient juste un session_start 
 require_once(dirname(__FILE__).'/../utils/init.php');
 $bdd = new PDO('mysql:host=localhost; dbname=amiens_sc', 'admin' , 'Parker.2280700');
-// $req = $bdd->prepare("SELECT * FROM user");
-// $req->execute([$_SESSION["user"]["id"]]);
-// $req_user = $req->fetch();
 $requete = $bdd->prepare("SELECT * FROM user WHERE id=".$_SESSION["user"]["id"]."");
 $requete->execute(array());
 $tab = $requete->fetch(PDO::FETCH_OBJ);

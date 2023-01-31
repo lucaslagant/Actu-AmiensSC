@@ -24,7 +24,7 @@ include dirname(__FILE__)."/views/templates/header.php";
 
             <!-- Rendre cliquable aussi ? -->
             <div class="text-4xl mt-20">
-                <a href="Equipe.php"><span class="text-rose-800 font-bold hover:underline underline-offset-8">Voir le club</span></a>
+                <a href="/views/equipe.php"><span class="text-rose-800 font-bold hover:underline underline-offset-8">Voir le club</span></a>
             </div>
 
         </div>
