@@ -1,17 +1,5 @@
 <?php
-    // $url = "http://127.0.0.1:8080/api/asc/lirecal.php";
-	
-	// $client = curl_init($url);
-	// curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
-	// $response = curl_exec($client);
-	
-	// $result = json_decode($response);
-    // var_dump($result);
-    
-    // $tab1 = json_decode(file_exists("http://127.0.0.1:8080/api/asc/lirecal.php"));
-    // var_dump($tab1);
-
-    include "db.php";
+    include dirname(__FILE__)."/assets/php/db.php";
     $db = connexionBase();
 
     $requete = $db->query("SELECT * FROM calendrier WHERE score != '' ORDER BY journee ASC");
@@ -63,7 +51,7 @@
                         <div class="px-9 py-4 w-1/3">
                             <div class="lg:flex">
                                 <div class="max-[280px]:hidden">
-                                    <img src="equipe/<?= $cal->img ?>" alt="<?= $cal->equipe ?>">
+                                    <img src="assets/image/equipe/<?= $cal->img ?>" alt="<?= $cal->equipe ?>">
                                 </div>
                                 <div class="grid place-items-center text-xl max-md:text-base max-sm:text-sm">
                                     <?= $cal->equipe ?>
@@ -83,7 +71,7 @@
                                     Amiens SC
                                 </div>
                                 <div class="max-[280px]:hidden">
-                                    <img src="equipe/Amiens-min.png" alt="Amiens SC">
+                                    <img src="assets/image/equipe/Amiens-min.png" alt="Amiens SC">
                                 </div>
                                 <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base max-sm:text-sm lg:hidden">
                                     Amiens SC
@@ -96,7 +84,7 @@
                         <div class="px-9 py-4 w-1/3">
                             <div class="lg:flex ">
                                 <div class="max-[280px]:hidden">
-                                    <img src="equipe/Amiens-min.png" alt="Amiens SC">
+                                    <img src="assets/image/equipe/Amiens-min.png" alt="Amiens SC">
                                 </div>
                                 <div class="grid place-items-center text-xl max-md:text-base max-sm:text-sm">
                                     Amiens SC
@@ -117,7 +105,7 @@
                                     <?= $cal->equipe ?>
                                 </div>
                                 <div class="max-[280px]:hidden">
-                                    <img src="equipe/<?= $cal->img ?>" alt="<?= $cal->equipe ?>">
+                                    <img src="assets/image/equipe/<?= $cal->img ?>" alt="<?= $cal->equipe ?>">
                                 </div>
                                 <div class="grid place-items-center text-xl flex max-md:justify-center max-md:text-base lg:hidden max-sm:text-sm">
                                     <?= $cal->equipe ?>
@@ -131,7 +119,7 @@
             <br class="max-md:hidden">
         <?php endforeach; ?> 
     </div>       
-    <?php include('Footer.php'); ?>
+    <?php include('templates/Footer.php'); ?>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

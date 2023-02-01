@@ -1,17 +1,5 @@
 <?php
-    // $url = "http://127.0.0.1:8080/api/asc/lireclas.php";
-	
-	// $client = curl_init($url);
-	// curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
-	// $response = curl_exec($client);
-	
-	// $result = json_decode($response);
-    // var_dump($result);
-    
-    // $tab1 = json_decode(file_get_contents("http://127.0.0.1:8080/api/asc/lireclas.php"));
-    // var_dump($tab1);
-
-    include "db.php";
+    include dirname(__FILE__)."/assets/php/db.php";
     $db = connexionBase();
 
     $requete = $db->query("SELECT * FROM classement ORDER BY num ASC");
@@ -100,7 +88,7 @@
                             <div class="flex">
                                 <div class="xl:flex w-3/4">
                                     <div class="max-md:w-100 max-md:h-200">
-                                        <img src="equipe/<?= $clas->img ?>" alt="<?= $clas->equipe ?>" >
+                                        <img src="assets/image/equipe/<?= $clas->img ?>" alt="<?= $clas->equipe ?>" >
                                     </div>
                                     <div class="md:py-11 text-lg max-md:text-base">
                                         <?= $clas->equipe ?>
@@ -169,7 +157,7 @@
         </div>
     </div> 
     <br>       
-    <?php include('Footer.php'); ?>
+    <?php include('templates/Footer.php'); ?>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
