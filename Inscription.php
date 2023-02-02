@@ -32,11 +32,11 @@
         </div>
     </nav>
 
-    <section class="bg-rose-50">
+    <section class="bg-rose-100 py-4 sm:bg-rose-50">
 
         <div class="">
             <div class="flex justify-center text-rose-800 pt-10 pb-10">
-                <div class="inline-block shadow-lg bg-rose-100 p-8 px-32 m-4">
+                <div class="inline-block sm:shadow-lg bg-rose-100 p-8 px-32 m-4">
                 <form action="">
                     <span class="text-3xl">Créer un compte</span>
                     <br><br><br>
