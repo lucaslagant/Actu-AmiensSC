@@ -22,6 +22,8 @@ if (isset($_SESSION['user'])) {
     <title>Actu-AmiensSC</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
 </head>
 
 <body style="background-color: #fff1f2">

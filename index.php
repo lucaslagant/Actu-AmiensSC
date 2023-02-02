@@ -1,15 +1,6 @@
 <?php
 include dirname(__FILE__)."/views/templates/header.php";
 ?>
-<!-- Section présentation/slogan -->
-    <section style="background-image: url('img/headers/aura.jpg')" class="pt-10 bg-cover">
-        <br><br>
-        <span class="text-5xl flex justify-center text-rose-800">Gros Logo</span>
-        <br><br>
-        <span class="text-3xl flex justify-center text-rose-800">Phrase d'accroche ici imo</span>
-        <br><br><br>
-    </section>
-
     <!-- Section d'accès aux joueurs -->
     <section class="bg-rose-100"> <!-- style="background-color: #ffffff;" -->
         <br><br><br>
@@ -31,8 +22,8 @@ include dirname(__FILE__)."/views/templates/header.php";
 
         <br><br><br>
     </section>
-    <!-- Section accès résultats/classement/calendrier -->
-    <section class="bg-rose-100">
+     <!-- Section accès résultats/classement/calendrier -->
+     <section class="bg-rose-100">
         <br><br><br><br>
 
         <div class="flex justify-center">
@@ -121,55 +112,74 @@ include dirname(__FILE__)."/views/templates/header.php";
                                 </tbody>
                             </table>
                         </div>
+                        <div class=" flex justify-center">
+                            <a href="Classement.php"
+                            class="block text-rose-100 inline-block hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 mt-3  items-center self-auto rounded-full">Classement</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
             <!-- Card des matchs passés -->
             <a href="#" class="px-4"> <!-- Renvoie vers tous les matchs -->
-                <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg p-12">
+                <div class="mx-4 px-4 py-4 overflow-x-auto">
+                    <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg p-12">
 
-                    <div class="flex lg:flex-col md:flex-col sm:flex-row">
-                        <!-- Col pour superposer les images en lg et md, row pour aligner en sm -->
-                        <img class="w-24 md:h-auto object-cover" src="img/Bordeaux.png" alt="EquipeUne" />
-                        <img class="w-24 md:h-auto object-cover" src="img/Amiens.png" alt="EquipeDeux" />
+                        <div class="flex lg:flex-col md:flex-col sm:flex-row">
+                            <!-- Col pour superposer les images en lg et md, row pour aligner en sm -->
+                            <img class="w-24 md:h-auto object-cover" src="img/Bordeaux.png" alt="EquipeUne" />
+                            <img class="w-24 md:h-auto object-cover" src="img/Amiens.png" alt="EquipeDeux" />
+                        </div>
+
+                        <div class="p-6 flex flex-col justify-start border-r-2">
+                            <span class="text-gray-700 text-base mb-14">Nom équipe<br></span>
+                            <span class="text-gray-700 text-base mb-10">Nom équipe</span>
+
+                            <p class="text-gray-600 text-xs flex justify-end">Terminé : 09/01</p>
+                        </div>
+
+                        <div class="p-6 flex flex-col">
+                            <span class="text-gray-700 text-base ml-4 mb-14">2<br></span>
+                            <span class="text-gray-700 text-base ml-4">0</span>
+                        </div>
+                        
+
                     </div>
-
-                    <div class="p-6 flex flex-col justify-start border-r-2">
-                        <span class="text-gray-700 text-base mb-14">Nom équipe<br></span>
-                        <span class="text-gray-700 text-base mb-10">Nom équipe</span>
-
-                        <p class="text-gray-600 text-xs flex justify-end">Terminé : 09/01</p>
+                    <div class=" flex justify-center">
+                                <a href="Resultats.php"
+                                class="block text-rose-100 inline-block hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 mt-3  items-center self-auto rounded-full"> Résultats</a>
                     </div>
-
-                    <div class="p-6 flex flex-col">
-                        <span class="text-gray-700 text-base ml-4 mb-14">2<br></span>
-                        <span class="text-gray-700 text-base ml-4">0</span>
-                    </div>
-
                 </div>
             </a>
 
+
             <!-- Card des matchs à venir -->
-            <div class="flex flex-col rounded-lg bg-white shadow-lg p-6 ml-12">
+            <div class="mx-4 px-4 py-4 overflow-x-auto">
+                <div class="flex flex-col rounded-lg bg-white shadow-lg p-6 ml-12">
 
-                <span class="text-gray-700 text-base mb-6">Match à venir : </span>
+                    <span class="text-gray-700 text-base mb-6">Match à venir : </span>
 
-                <div class="flex flex-row justify-between px-2">
-                    <img class="w-24" src="img/Bordeaux.png" alt="EquipeUne" />
-                    <span class="text-gray-700 text-base mt-6">21:00<br></span>
-                    <img class="w-24" src="img/Amiens.png" alt="EquipeDeux" />
+                    <div class="flex flex-row justify-between px-2">
+                        <img class="w-24" src="img/Bordeaux.png" alt="EquipeUne" />
+                        <span class="text-gray-700 text-base mt-6">21:00<br></span>
+                        <img class="w-24" src="img/Amiens.png" alt="EquipeDeux" />
+                    </div>
+
+                    <div class="p-6 flex flex-row justify-between">
+                        <span class="text-gray-700 text-base pr-10">Nom équipe<br></span>
+                        <span class="text-gray-700 text-base">Nom équipe</span>
+                    </div>
                 </div>
-
-                <div class="p-6 flex flex-row justify-between">
-                    <span class="text-gray-700 text-base pr-10">Nom équipe<br></span>
-                    <span class="text-gray-700 text-base">Nom équipe</span>
+                <div class=" flex justify-center">
+                        <a href="/views/resultat.php"
+                            class="block text-rose-100 inline-block hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 mt-3  items-center self-auto rounded-full">Match à venir
+                        </a>
                 </div>
-
             </div>
         </div>
         <br><br><br><br>
-    </section>  
+    </section>
 
 <?php
 include dirname(__FILE__)."/views/templates/footer.php";

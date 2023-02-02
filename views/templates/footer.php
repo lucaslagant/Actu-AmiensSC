@@ -24,8 +24,13 @@
                 </li>
                 <li
                     class="bg-rose-300 mr-2 rounded-full border-2 border-rose-400 p-2 hover:border-rose-300 hover:bg-rose-300">
-                    <a href="https://www.instagram.com/?hl=fr" class="p-1 bx-flashing-hover" target="_blank"><i
+                    <a href="https://www.instagram.com/amiensscfootball/" class="p-1 bx-flashing-hover" target="_blank"><i
                             class='bx bxl-instagram' style='color:#9f1239'></i></a>
+                </li>
+                <li
+                    class="bg-rose-300 mr-2 rounded-full border-2 border-rose-400 p-2 hover:border-rose-300 hover:bg-rose-300">
+                    <a href="http://www.amiensfootball.com/" class="p-1 bx-flashing-hover" target="_blank"><i class='bx bx-football'
+                            style='color:#9f1239'></i></a>
                 </li>
             </ul>
         </div>
@@ -42,11 +47,13 @@
 
     <!-- jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js" integrity="sha512-s/ili339Sh6gM9omfUC6fRwZPU6MPcGJxvDqlbBzPcFcD649iqeO96YQr3VKj/jZSMd2/T9Qr2mp2w4DyCIOPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script JS  -->
     <script src="/asset/js/script.js"></script>
     <!-- JS boxicons  -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!-- Sweet Alert JS  -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

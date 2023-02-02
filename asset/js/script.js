@@ -1,23 +1,3 @@
-// ====================================== Joueur modal ===========================================
-
-// var modal = document.getElementById("modal-joueur1");
-// var btn = document.getElementById("player1");
-// var close = document.getElementsByClassName("close")[0];
-
-// btn.onclick = function() {
-//     modal.style.display = "block";
-// }
-
-// close.onclick = function() {
-//     modal.style.display = "none";
-// }
-
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
-
 // ====================================== Sweet Alert 2 ===========================================
 // jQUERY
 $(document).ready(function() {
@@ -65,3 +45,71 @@ $(document).ready(function() {
         });
     });
 });
+
+
+// Modal
+function toggleModal(modalID) {
+    document.getElementById(modalID).classList.toggle("hidden");
+    document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+    document.getElementById(modalID).classList.toggle("flex");
+    document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+}
+
+
+// Script des swipers
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    speed: 400,
+    spaceBetween: 100,
+    // autoplay:{
+    //     delay:3000,
+    // },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+// const Open = document.getElementById("burger");
+// const Close = document.getElementById("fermer");
+// const SideMenu = document.getElementById("sidemenu");
+
+// // Ouvrir le menu
+// if (Open) {
+//     Open.addEventListener("click", () => {
+//         SideMenu.classList.remove("invisible")
+//     })
+// }
+
+// // Fermer le menu
+// if (Close) {
+//     Close.addEventListener("click", () => {
+//         SideMenu.classList.add("invisible")
+//     })
+// }
+
+
+// ====================================== Transfert ===========================================
+
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+    
+})
