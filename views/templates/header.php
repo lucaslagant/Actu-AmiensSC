@@ -34,17 +34,17 @@ if (isset($_SESSION['user'])) {
     <!-- Barre de navigation -->
     <nav class="flex items-center justify-between flex-wrap bg-rose-200 p-10">
         <div class="flex items-center flex-shrink-0 text-rose-800 mr-6">
-            <a href="index.php"><span class="font-bold text-xl tracking-tight">Logo</span></a>
+            <a href="index.php"><span class="font-bold text-xl tracking-tight">actuASC</span></a>
         </div>
 
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
                 <a href="/index.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Accueil</a>
                 <a href="/views/equipe.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Équipe</a>
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Classement</a>
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Résultat</a>
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Calendrier</a>
-                <a href="#" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500">Contact</a>
+                <a href="/views/classement.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Classement</a>
+                <a href="/views/resultat.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Résultat</a>
+                <a href="/views/matchAvenir.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500 mr-5">Calendrier</a>
+                <a href="/views/contact.php" class="block text-rose-800 lg:inline-block lg:mt-0 hover:text-rose-500">Contact</a>
             </div>
             <?php if (isset($_SESSION['user'])) { ?> 
                 <div class="text-2xl text-rose-800 hover:text-rose-500">

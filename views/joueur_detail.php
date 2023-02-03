@@ -1,7 +1,7 @@
 <?php
 include dirname(__FILE__)."/templates/header.php";
    
-include "../db.php";
+include "../utils/db.php";
 $db = connexionBase();
 $id = $_GET["id"];
 $requete = $db->prepare("SELECT * FROM joueurs WHERE id=?");
@@ -23,7 +23,7 @@ $requete->closeCursor();
                     <span class="fs-3" hidden><?=$player->id?></span>
                 </td>
                 <td class="p-3">
-                    <img src="/../site/img/<?= $player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="w-50">
+                    <img src="/asset/img/<?=$player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="w-50">
                 </td>
                 <td class="p-3">
                     <span class="fs-3">NOM :<?=$player->nom?></span>

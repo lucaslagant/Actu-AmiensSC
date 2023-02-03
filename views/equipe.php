@@ -24,7 +24,7 @@ include dirname(__FILE__)."/templates/header.php";
                             <div class="swiper-slide">
                             <a href="joueur_detail.php?id=<?= $player->id ?>">
                             <input type="hidden" value="<?=$player->id?>">
-                                    <img src="/../asset/img/<?= $player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="h-96 rounded-lg">
+                                    <img src="/../asset/img/<?= $player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="h-96 ml-20 rounded-lg flex items-center ">
                             </a>
                             <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                                 <?= $player->nom ?>  <?= $player->prenom ?>
@@ -49,8 +49,8 @@ include dirname(__FILE__)."/templates/header.php";
                 <?php foreach ($tab as $player):?>
                     <?php if($player->joueurs_type==1):?>
                             <div class="swiper-slide">
-                            <a href="joueur_detail.php?id=<?= $player->id ?>">
-                                    <img src="/../asset/img/<?= $player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="h-96 rounded-lg">
+                            <a href="/views/joueur_detail.php?id=<?=$player->id ?>">
+                                    <img src="/../asset/img/<?= $player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="h-96 ml-20 rounded-lg">
                             </a>
                             <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                                 <?= $player->nom ?>  <?= $player->prenom ?>
@@ -77,7 +77,7 @@ include dirname(__FILE__)."/templates/header.php";
                     <?php if($player->joueurs_type==2):?>
                             <div class="swiper-slide">
                             <a href="joueur_detail.php?id=<?= $player->id ?>">
-                                    <img src="/../asset/img/<?= $player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="h-96 rounded-lg">
+                                    <img src="/../asset/img/<?= $player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="h-96 ml-20 rounded-lg">
                             </a>
                             <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                                 <?= $player->nom ?>  <?= $player->prenom ?>
@@ -103,7 +103,7 @@ include dirname(__FILE__)."/templates/header.php";
                     <?php if($player->joueurs_type==3):?>
                             <div class="swiper-slide">
                             <a href="joueur_detail.php?id=<?= $player->id ?>">
-                                    <img src="/../asset/img/<?= $player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="h-96 rounded-lg">
+                                    <img src="/../asset/img/<?= $player->img_joueur ?>" alt="<?= $player->img_joueur ?>" class="h-96 ml-20 rounded-lg">
                             </a>
                             <div class="text-2xl font-semibold mt-4 flex justify-center mb-4">
                                 <?= $player->nom ?>  <?= $player->prenom ?>

@@ -1,37 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php
+    include "../utils/db.php";
+    $db = connexionBase();
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href='style.css' rel='stylesheet'>
-</head>
+    $requete = $db->query("SELECT * FROM classement ORDER BY num ASC");
+    $tab = $requete->fetchAll(PDO::FETCH_OBJ);
+    $requete->closeCursor();
+    include dirname(__FILE__)."/templates/header.php";
 
-<body style="background-color:#ffe4e6;">
-
-
-    <!-- Pour rétrécir la page un peu (ajouter /div en bas) -->
-    <!-- <div class="w-full px-64 mx-auto"> -->
-
-
-    <!-- Navbar en burger, s'ouvre OnClick -->
-    <nav class="flex items-center justify-between flex-wrap bg-rose-200 p-10">
-        <div class="flex items-center flex-shrink-0 text-rose-800 mr-6">
-            <a href="Index.php"><span class="font-bold text-xl tracking-tight">Logo</span></a>
-        </div>
-
-        <div class="lg:flex lg:items-center lg:w-auto">
-            <div>
-                <button class="block text-xl text-rose-100 inline-block mt-0 hover:text-white bg-rose-800 hover:bg-rose-700 px-5 py-2 rounded-full" id="burger"><i class='bx bx-menu'></i></button>
-            </div>
-            <div id="sidemenu" class="invisible"><?php include('Page_Navbar.php'); ?></div>
-        </div>
-    </nav>
-
+?>
 
     <section class="text-rose-800">
         <div class="flex justify-center my-6">
@@ -60,16 +36,8 @@
             </div>
         </div>
     </section>
+<?php
+include dirname(__FILE__)."/templates/footer.php";
+?>
 
 
-
-
-    <!-- Footer -->
-    <?php include('Footer.php'); ?>
-
-
-<script src="script.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-</body>
-
-</html>

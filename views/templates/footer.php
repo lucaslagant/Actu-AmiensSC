@@ -5,7 +5,7 @@
                 <!-- <img src="img/ASCActus.png" class="h-8 mr-3" alt="ASCActus Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap">ASC Actus</span> -->
                 <h1 class="text-rose-800 font-semibold"><span style="color: black;"><i
-                            class='bx bxs-chevron-right'></i></span> Logo à voir
+                            class='bx bxs-chevron-right'></i></span> actuASC
                 </h1>
             </div>
             <ul class="flex flex-wrap items-center mb-6 text-xl sm:mb-0">
@@ -36,7 +36,7 @@
         </div>
         <hr class="my-6 border-rose-800 sm:mx-auto lg:my-8" />
         <div class="flex justify-center">
-            <span class="mr-4 text-sm text-rose-800 sm:text-center"> <a href="#"
+            <span class="mr-4 text-sm text-rose-800 sm:text-center"> <a href="/views/contact.php"
                     class="hover:text-rose-500">Contactez-nous</a></span>
             <span class="mr-4 text-sm text-rose-800 sm:text-center"><a href="#" class="hover:text-rose-500">Mentions
                     Légales</a></span>
